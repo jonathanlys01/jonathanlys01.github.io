@@ -9,7 +9,7 @@ author_profile: true
 
 <p>Here are some of the projects (mostly academic) that I have worked on:</p>
 
-{% assign sorted_posts = site.portfolio | sort: 'date' %}
+{% assign sorted_posts = site.portfolio | sort: 'date' | reverse %}
 {% for post in sorted_posts %}
   {% include archive-single.html %}
 {% endfor %}
