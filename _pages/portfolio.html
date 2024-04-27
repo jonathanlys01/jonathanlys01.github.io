@@ -7,8 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+<p>Here are some of the projects (mostly academic) that I have worked on:</p>
 
-{% for post in site.portfolio %}
+{% assign sorted_posts = site.portfolio | sort: 'date' %}
+{% for post in sorted_posts %}
   {% include archive-single.html %}
 {% endfor %}
 
