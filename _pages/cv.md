@@ -11,54 +11,40 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Engineering degree, IMT Atlantique, 2021-present
+* M.Sc. Engineering Sciences and Applications, University of Rennes 1, 2023-2024
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* April 2024 - Present: Research Intern
+  * Criteo AI Lab, Paris
+  * Studied diffusion models for image generation
+  * Supervisor: Jaspreet Sandhu, Thibaut Issenhuth, Ludovic Dos Santos
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2023: Research Intern
+  * BRAIn team, IMT Atlantique
+  * Fine-tuned SAM, studied data augmentation techniques
+  * Supervisor: Bastien Pasdeloup
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* February 2022: Developer Intern
+  * French Polynesia’s government IT Department
+  * Development of a Web application for network management, automation of database migrations
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Computer Science
+  * Python, SQL, Java, R, Julia, C++, Matlab, Jupyter
+* Machine Learning
+  * Numpy, Pandas, sklearn, statistical and probabilistic models
+* Deep Learning
+  * PyTorch, Tensorflow, Keras, CNNs and Vision Transformers training
+* Soft Skills
+  * Agile methods, communication, applied research
+* Languages
+  * English (C1, IELTS 7.5), Mandarin (B2.1, HSK3 equivalent, intensive summer study at Beijing Language and Culture University), basic Spanish
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
