@@ -12,7 +12,10 @@ redirect_from:
 Education
 ======
 * Engineering degree, IMT Atlantique, 2021-present
+  * Mathematical and Computational Engineering specialization
+  * Machine Learning, Deep Learning, Computer Vision, Signal Processing, Optimization
 * M.Sc. Engineering Sciences and Applications, University of Rennes 1, 2023-2024
+* Academic exchange, University of Technology Sydney, 2023
 
 Work experience
 ======
