@@ -11,4 +11,4 @@ CLAP, or Contrastive Language-Audio Pretraining, is a pretraining strategy that 
 
 This also allows visual exploration of sound categories and their corresponding text prompts. The visualization below shows the embedding space of the CLAP model, where the points represent sounds. The colors indicate the sound categories, and the text prompts are also displayed. The embeddings are projected into a 2D space using t-SNE for visualization purposes. The dataset used is ESC-50. 
 
-<img src='../images/portfolio/clap-viz.png' width='100%'>
+<img src='/images/portfolio/clap-viz.png' width='100%'>

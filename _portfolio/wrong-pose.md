@@ -24,5 +24,5 @@ Our web application utilizes the power of Detectron2, a Convolutional Neural Net
 To quantify the quality of the assessed posture, we employ a Score Regressor, which is an MLP. The regressor consists of two hidden layers with 64 and 32 nodes, respectively, and a sigmoid output. With a remarkable 98% test accuracy, the regressor provides reliable and meaningful scores. Our scoring system utilizes scale invariant features, ensuring accurate and consistent results regardless of the camera's position or the object's orientation in the detected scene. This means that our model can effectively evaluate postures regardless of where the camera is placed or how the detected object is positioned. By leveraging these advanced features, our scoring mechanism provides reliable and meaningful assessments of posture correctness.
 
 Sample output (frame-wise pose estimation and goodness of pose score) is shown below:
-<img src='../images/portfolio/wp-demo.gif' width='100%'>
-<img src='../images/portfolio/wp-score.png' width='100%'>
+<img src='/images/portfolio/wp-demo.gif' width='100%'>
+<img src='/images/portfolio/wp-score.png' width='100%'>
