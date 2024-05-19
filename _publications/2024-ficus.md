@@ -6,6 +6,7 @@ excerpt: 'This is my first paper. It tackles ambiguous few-shot image classifica
 date: 2024-03-01
 venue: 'Under review'
 paperurl: 'https://jonathanlys01.github.io/files/ficus.pdf'
+slidesurl: 'https://jonathanlys01.github.io/files/slides1.pdf'
 citation: 'Lys, et al. (2024). &quot;FICUS: Few-shot Image Classification with Unsupervised Segmentation.&quot; <i>Under review</i>.'
 ---
 
