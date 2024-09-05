@@ -1,6 +1,7 @@
 ---
 title: "FICUS: Few-shot Image Classification with Unsupervised Segmentation"
 collection: publications
+category: conferences
 permalink: /publication/2024-ficus
 excerpt: 'This is my first paper. It tackles ambiguous few-shot image classification problems.'
 date: 2024-03-01
