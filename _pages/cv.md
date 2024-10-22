@@ -41,6 +41,8 @@ Skills
   * Numpy, Pandas, sklearn, statistical and probabilistic models
 * Deep Learning
   * PyTorch, Tensorflow, Keras, CNNs and Vision Transformers training
+* Distributed operations
+  * Hadoop, Spark, multi-gpu training (PyTorch distributed, Accelerate, NCCL)
 * Soft Skills
   * Agile methods, communication, applied research
 * Languages
