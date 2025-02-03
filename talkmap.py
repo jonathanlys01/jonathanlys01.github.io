@@ -11,6 +11,7 @@
 #
 # Requires: glob, getorg, geopy
 
+import time
 
 import getorg
 from geopy import Nominatim
@@ -26,8 +27,14 @@ places = [
 ]
 # END EDIT
 
-geocoder = Nominatim()
-location_dict = {place: geocoder.geocode(place) for place in places}
+geocoder = Nominatim(user_agent="my-application")
+
+location_dict = {}
+for place in places:
+    location = geocoder.geocode(place)
+    location_dict[place] = location
+    print((place, location.latitude, location.longitude))
+    time.sleep(1)
 
 m = getorg.orgmap.create_map_obj()
 getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../visitmap", hashed_usernames=False)

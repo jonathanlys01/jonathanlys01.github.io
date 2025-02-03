@@ -19,6 +19,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pip install ipywidgets
         pip install pandas requests beautifulsoup4 geopy
         pip install getorg --upgrade
 
