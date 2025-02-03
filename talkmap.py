@@ -19,7 +19,7 @@ from geopy import Nominatim
 # EDIT HERE
 places = [
     "Brest, France", # MSc and PhD, Internship
-    "Paris, France", # Internship
+    "Criteo, Paris, France", # Internship
     "Stuttgart, Germany", # Visit
     "Lyon, France", # Conference
     "Sydney, Australia", # Academic exchange
@@ -37,7 +37,7 @@ for place in places:
     time.sleep(1)
 
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../visitmap", hashed_usernames=False)
+getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../talkmap", hashed_usernames=False)
 
 
 
