@@ -26,4 +26,12 @@ Automatically updated with [HAL Tools](https://haltools.archives-ouvertes.fr/)
 
 <iframe src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?idHal=1399960&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_DOI=oui&CB_vignette=oui&langue=all&tri_exp=date_publi&tri_exp2=titre&tri_exp3=typdoc&ordre_aff=TA&Fen=Aff&css=../css/styles_publicationsHAL.css" width="100%" height="300" frameborder="0"></iframe>
 
+
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/visitmap.html">See a cool map of places I visited for conferences, internships and studies</a></p>
+
+{% endif %}
+
+
 ---
