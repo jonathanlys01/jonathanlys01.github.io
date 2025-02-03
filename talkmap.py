@@ -27,7 +27,7 @@ places = [
 ]
 # END EDIT
 
-geocoder = Nominatim(user_agent="my-application")
+geocoder = Nominatim(user_agent="cool-mapp")
 
 location_dict = {}
 for place in places:
