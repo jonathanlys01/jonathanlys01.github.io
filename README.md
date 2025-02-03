@@ -1,5 +1,5 @@
 # Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
@@ -41,16 +41,13 @@ If you are running on Linux it may be necessary to install some additional depen
 
 Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
 
-Start by build the container:
+You can build and execute the container by running the following command in the repository:
 
 ```bash
-docker build -t jekyll-site .
+docker compose up
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
-```
+You should now be able to access the website from `localhost:4000`.
 
 # Maintenance
 
