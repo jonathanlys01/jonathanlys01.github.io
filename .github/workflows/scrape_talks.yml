@@ -3,8 +3,7 @@ name: Scrape Talk Locations
 on:
   push:
     paths:
-      - 'talks/**'
-      - 'talkmap.ipynb'
+      - 'talkmap.py'
 
 jobs:
   build:
@@ -20,12 +19,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
+        pip install pandas requests beautifulsoup4 geopy
         pip install getorg --upgrade
 
-    - name: Run Jupyter Notebook
-      run: |
-        jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
+    - name: Run Python Script
+      run: python talkmap.py  # Execute your Python script instead of the Jupyter notebook
 
     - name: Commit changes
       run: |
