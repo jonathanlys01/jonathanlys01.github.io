@@ -11,6 +11,7 @@
 #
 # Requires: glob, getorg, geopy
 
+import os
 import time
 
 import getorg
@@ -37,7 +38,9 @@ for place in places:
     time.sleep(1)
 
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="../talkmap", hashed_usernames=False)
+getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
+
+print("written to", os.path.abspath("talkmap"))
 
 
 
