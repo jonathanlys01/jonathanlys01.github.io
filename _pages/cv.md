@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Ph.D. student, IMT Atlantique, 2024-2027
-  * Research on language models
+  * Research on diffusion models for text generation
   * Supervisor: Vincent Gripon, Bastien Pasdeloup, Axel Marmoret
 
 * Engineering degree, IMT Atlantique, 2021-2024
@@ -67,3 +67,14 @@ Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+
+
+{% if site.talkmap_link == true %}
+
+Map
+======
+
+<p style="text-decoration:underline;"><a href="{{ site.baseurl }}/visitmap.html">See a cool map of places I visited for conferences, internships and studies</a></p>
+
+{% endif %}

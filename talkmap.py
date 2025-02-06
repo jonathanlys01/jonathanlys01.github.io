@@ -1,5 +1,3 @@
-
-
 # # Leaflet cluster map of talk locations
 #
 # (c) 2016-2017 R. Stuart Geiger, released under the MIT license
@@ -19,12 +17,12 @@ from geopy import Nominatim
 
 # EDIT HERE
 places = [
-    "Brest, France", # MSc and PhD, Internship
-    "Criteo, Paris, France", # Internship
-    "Stuttgart, Germany", # Visit
-    "Lyon, France", # Conference
-    "Sydney, Australia", # Academic exchange
-    "Papeete, French Polynesia", # Internship
+    "IMT Atlantique, Brest, France",  # MSc and PhD, Internship
+    "Criteo, Paris, France",  # Internship
+    "Hedelfinger Str. 61, 70327 Stuttgart, Germany",  # Visit
+    "Centre de Congrès de Lyon, Lyon, France",  # Conference
+    "University of Technology Sydney, Sydney, Australia",  # Academic exchange
+    "Service de l'Informatique, Papeete, French Polynesia",  # Internship
 ]
 # END EDIT
 
@@ -41,6 +39,3 @@ m = getorg.orgmap.create_map_obj()
 getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
 
 print("written to", os.path.abspath("talkmap"))
-
-
-
