@@ -1,19 +1,17 @@
-# # Leaflet cluster map of talk locations
+# Leaflet cluster map of talk locations
 #
-# (c) 2016-2017 R. Stuart Geiger, released under the MIT license
-#
-# Run this from the _talks/ directory, which contains .md files of all your talks.
-# This scrapes the location YAML field from each .md file, geolocates it with
-# geopy/Nominatim, and uses the getorg library to output data, HTML,
-# and Javascript for a standalone cluster map.
-#
-# Requires: glob, getorg, geopy
-
+# Run this from the _talks/ directory, which contains .md files of all your
+# talks.This scrapes the location YAML field from each .md file, geolocates it
+# with geopy/Nominatim, and uses the getorg library to output data, HTML, and
+# Javascript for a standalone cluster map. This is functionally the same as the
+# #talkmap Jupyter notebook.
+import frontmatter
 import os
 import time
 
 import getorg
 from geopy import Nominatim
+from geopy.exc import GeocoderTimedOut
 
 # EDIT HERE
 places = [
@@ -26,8 +24,8 @@ places = [
 ]
 # END EDIT
 
-geocoder = Nominatim(user_agent="cool-mapp")
-
+# Prepare to geolocate
+geocoder = Nominatim(user_agent="academicpages.github.io")
 location_dict = {}
 for place in places:
     location = geocoder.geocode(place)
