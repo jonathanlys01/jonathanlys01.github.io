@@ -3,11 +3,12 @@ title: "FICUS: Few-shot Image Classification with Unsupervised Segmentation"
 collection: publications
 category: conferences
 permalink: /publication/2024-ficus
-excerpt: 'This is my first contribution. It tackles ambiguous few-shot image classification problems.'
+excerpt: 'This paper tackles ambiguous few-shot image classification problems.'
 date: 2024-03-01
 venue: "EUSIPCO"
 paperurl: 'https://jonathanlys01.github.io/files/ficus.pdf'
 slidesurl: 'https://jonathanlys01.github.io/files/ficus_slides.pdf'
+bibtexurl: 'https://jonathanlys01.github.io/files/ficus.bib'
 citation: 'Lys, et al. (2024). &quot;FICUS: Few-shot Image Classification with Unsupervised Segmentation.&quot; In 2024 32nd European Signal Processing Conference <i>(EUSIPCO)</i>(pp. 1791-1795). IEEE.'
 ---
 

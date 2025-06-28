@@ -1,6 +1,6 @@
 ---
 title: "CLAP App"
-excerpt: "A text-prompted sound retrieval model<br/><img src='/images/portfolio/clap-viz.png'>"
+excerpt: "A text-prompted sound retrieval model<br/><img src='/images/portfolio/clap-viz.png' width='300'>"
 collection: portfolio
 date: 2023-12-15
 ---

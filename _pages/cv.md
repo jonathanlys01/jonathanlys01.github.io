@@ -13,7 +13,7 @@ Education
 ======
 * Ph.D. student, IMT Atlantique, 2024-2027
   * Research on diffusion models for text generation
-  * Supervisor: Vincent Gripon, Bastien Pasdeloup, Axel Marmoret
+  * Supervisors: Vincent Gripon, Bastien Pasdeloup, Axel Marmoret
 
 * Engineering degree, IMT Atlantique, 2021-2024
   * Mathematical and Computational Engineering specialization
@@ -27,7 +27,7 @@ Education
 Work experience
 ======
 
-* November 2024: Visiting Scientist
+* November 2024; May 2025 - June 2025: Visiting Scientist
   * Sony Europe, Stuttgart, Germany
   * Research on discrete diffusion models for text generation
 
@@ -52,9 +52,9 @@ Skills
 * Machine Learning
   * Numpy, Pandas, sklearn, statistical and probabilistic models
 * Deep Learning
-  * PyTorch, Tensorflow, Keras, CNNs and Vision Transformers training
+  * PyTorch, Tensorflow, Keras, CNNs and Transformers training
 * Hugging Face 🤗
-  * tranformers, diffusers, tokenizers, datasets, accelerate
+  * transformers, diffusers, tokenizers, datasets, accelerate
 * Distributed operations
   * Hadoop, Spark, multi-gpu/multi-node training (PyTorch distributed, Accelerate, NCCL), SLURM
 * Soft Skills
@@ -75,6 +75,6 @@ Publications
 Map
 ======
 
-<p style="text-decoration:underline;"><a href="{{ site.baseurl }}/visitmap.html">See a cool map of places I visited for conferences, internships and studies</a></p>
+<p style="text-decoration:underline;"><a href="{{ site.baseurl }}/visitmap.html">Map of places I visited for work: conferences, visits, internships...</a></p>
 
 {% endif %}

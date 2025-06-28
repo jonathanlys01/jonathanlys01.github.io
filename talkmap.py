@@ -13,12 +13,15 @@ from geopy import Nominatim
 
 # EDIT HERE
 places = [
-    "IMT Atlantique, Brest, France",  # MSc and PhD, Internship
-    "Criteo, Paris, France",  # Internship
-    "Hedelfinger Str. 61, 70327 Stuttgart, Germany",  # Visit
-    "Centre de Congrès de Lyon, Lyon, France",  # Conference
-    "University of Technology Sydney, Sydney, Australia",  # Academic exchange
+    "IMT Atlantique, Brest, France",  # MSc, Internship, PhD
     "Service de l'Informatique, Papeete, French Polynesia",  # Internship
+    "University of Technology Sydney, Sydney, Australia",  # Academic exchange
+    "Criteo, Paris, France",  # Internship
+    "Centre de Congrès de Lyon, Lyon, France",  # Conference
+    "Hedelfinger Str. 61, 70327 Stuttgart, Germany",  # PhD Visit
+    "Université de Lille",  # PhD Visit
+    # TODO "Oxford University",  # Summer School
+    # TODO "INRIA Grenoble",  # Summer School
 ]
 # END EDIT
 
@@ -32,6 +35,8 @@ for place in places:
     time.sleep(1)
 
 m = getorg.orgmap.create_map_obj()
-getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
+getorg.orgmap.output_html_cluster_map(
+    location_dict, folder_name="talkmap", hashed_usernames=False
+)
 
 print("written to", os.path.abspath("talkmap"))
