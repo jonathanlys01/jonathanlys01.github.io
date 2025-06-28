@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # # Talks markdown generator for academicpages
@@ -9,9 +8,8 @@
 
 # In[1]:
 
-import os
-
 import pandas as pd
+import os
 
 
 # ## Data format
@@ -44,15 +42,12 @@ talks
 
 # In[4]:
 
-html_escape_table = {
-    "&": "&amp;",
-    '"': "&quot;",
-    "'": "&apos;"
-    }
+html_escape_table = {"&": "&amp;", '"': "&quot;", "'": "&apos;"}
+
 
 def html_escape(text):
     if type(text) is str:
-        return "".join(html_escape_table.get(c,c) for c in text)
+        return "".join(html_escape_table.get(c, c) for c in text)
     else:
         return "False"
 
@@ -66,12 +61,11 @@ def html_escape(text):
 loc_dict = {}
 
 for row, item in talks.iterrows():
-
     md_filename = str(item.date) + "-" + item.url_slug + ".md"
     html_filename = str(item.date) + "-" + item.url_slug
     year = item.date[:4]
 
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = '---\ntitle: "' + item.title + '"\n'
     md += "collection: talks" + "\n"
 
     if len(str(item.type)) > 3:
@@ -84,7 +78,7 @@ for row, item in talks.iterrows():
     if len(str(item.venue)) > 3:
         md += 'venue: "' + item.venue + '"\n'
 
-    if len(str(item.location)) > 3:
+    if len(str(item.date)) > 3:
         md += "date: " + str(item.date) + "\n"
 
     if len(str(item.location)) > 3:
@@ -92,21 +86,17 @@ for row, item in talks.iterrows():
 
     md += "---\n"
 
-
     if len(str(item.talk_url)) > 3:
         md += "\n[More information here](" + item.talk_url + ")\n"
-
 
     if len(str(item.description)) > 3:
         md += "\n" + html_escape(item.description) + "\n"
 
-
     md_filename = os.path.basename(md_filename)
-    #print(md)
+    # print(md)
 
-    with open("../_talks/" + md_filename, 'w') as f:
+    with open("../_talks/" + md_filename, "w") as f:
         f.write(md)
 
 
 # These files are in the talks directory, one directory below where we're working from.
-
