@@ -1,152 +1,170 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Jonathan Lys",
+    "email": "jonathan.lys@imt-atlantique.org",
+    "website": "https://jonathanlys01.github.io",
+    "summary": "First year PhD student at IMT Atlantique. Previously research intern in the Criteo AI Lab. Computer Vision, Natural Language Processing and Deep Learning enthusiast. I like to optimize the training and the generation of large language models and diffusion models.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Brest",
+      "countryCode": "FR",
+      "region": "Bretagne"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "username": "heUq7WEAAAAJ",
+        "url": "https://scholar.google.com/citations?user=heUq7WEAAAAJ"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "jonathanlys01",
+        "url": "https://github.com/jonathanlys01"
       }
     ]
   },
-  "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "IMT Atlantique, BRAIN Team",
+      "area": "Ph.D Student in Computer Science",
+      "date": "2027",
+      "description": "Focusing on discrete diffusion models and NLP applications.<br> Supervised by Vincent Gripon, Bastien Pasdeloup, Axel Marmoret."
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "IMT Atlantique",
+      "area": "Engineering Degree",
+      "date": "2021 - 2024",
+      "courses": ["Machine Learning", "Deep Learning", "Computer Vision", "Signal Processing", "Optimization"],
+      "description": "Mathematical and Computational Engineering specialization."
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "University of Rennes 1",
+      "area": "M.Sc. Engineering Sciences and Applications",
+      "date": "2023 - 2024",
+      "description": "Double degree program with Rennes 1 and CentraleSupélec.<br> Signal and Image processing major."
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
+  "work": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "company": "Sony Europe, Stuttgart, Germany",
+      "position": "Visiting Scientist",
+      "startDate": "2024",
+      "endDate": "2025",
+      "summary": "Two visits to EUREC, total of 3 months.",
+      "highlights": [
+        "Worked on conditional generation for text diffusion models.",
+        "Studied looped AR LLMs for reasoning tasks."
+      ]
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "company": "Criteo AI Lab, Paris, France",
+      "position": "Research Intern",
+      "startDate": "April 2024",
+      "endDate": "October 2024",
+      "summary": "Studied diffusion models, for image background generation.<br> Supervised by Jaspreet Sandhu, Thibaut Issenhuth, Ludovic Dos Santos",
+      "highlights": [
+        "Trained large-scale diffusion models up to 6B parameters.",
+        "Developed an ad background generation pipeline, reducing object extension by 10×, achieving lowest FID and fast inference.",
+        "Worked on billions of product images, leveraging PySpark and distributed training."
+      ]
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "company": "IMT Atlantique, BRAIN Team, Brest, France",
+      "position": "Research Intern",
+      "startDate": "Summer 2023",
+      "summary": "Studied parameter-efficient fine-tuning methods for SAM and attention-based data augmentation techniques. Supervised by Bastien Pasdeloup.",
+      "highlights": [
+        "Matched the performance of full fine-tuning with a custom LoRA method.",
+        "Improved the performance of CNNs through attention-based data augmentation."
+      ]
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "company": "French Polynesia’s government IT Department, Papeete, French Polynesia",
+      "position": "Developer Intern",
+      "startDate": "February 2022",
+      "summary": "Development of a Web application for network management, automation of database migrations"
     }
   ],
-  "presentations": [
+  "skills": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Programming Languages",
+      "keywords": ["Python", "Julia, R", "Java, SQL", "C++", "Matlab"]
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Machine Learning",
+      "keywords": ["numpy", "Pandas", "sklearn", "statistical and probabilistic models", "data analysis"]
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
+      "name": "Deep Learning",
+      "keywords": ["PyTorch (distributed)", "TensorFlow/Keras", "triton","CNNs and Transformers training"]
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Hugging Face",
+      "keywords": ["transformers", "diffusers", "datasets", "accelerate"]
+    },
+    {
+      "name": "Distributed Systems",
+      "keywords": ["multi-gpu/multi-node training", "SLURM","Hadoop", "Spark"]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": ["teamwork", "communication", "Agile methods", "problem solving"]
+    }
+
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C1, IELTS 7.5"
+    },
+    {
+      "language": "Mandarin",
+      "fluency": "B2.1, HSK3 equivalent"
+    },
+
+    {
+      "language": "notions of Spanish and German"
     }
   ],
-  "teaching": [
+  "interests": [
+    "music (violin for 12 years)",
+    "competitive chess (World top 0.3% online)",
+    "photography"
+  ],
+  "associations": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "name": "IMTA PhD Student Association",
+      "role": "Secretary"
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
+      "name": "IMTA Photography Association",
+      "role": "President",
+      "until": "2023"
+    },
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "IMTA Short Film Association",
+      "role": "President",
+      "until": "2023"
+    },
+    {
+      "name": "IMTA Sound & Light Association",
+      "role": "Officer",
+      "until": "2023"
+    },
+    {
+      "name": "IMTA Arts Association",
+      "role": "Member",
+      "until": "2023"
+    },
+    {
+      "name": "IMTA Chess Association",
+      "role": "Member"
     }
+
   ]
 }

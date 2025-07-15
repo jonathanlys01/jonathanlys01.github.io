@@ -1,6 +1,6 @@
 ---
 title: "Criteo Internship"
-excerpt: "A diffusion-based image background generation project<br/><img src='/images/portfolio/shoe.png' width='300'>"
+excerpt: "A diffusion-based image background generation project<br/><img src='/images/portfolio/shoe.png' width='35%'>"
 collection: portfolio
 date: 2024-10-11
 ---

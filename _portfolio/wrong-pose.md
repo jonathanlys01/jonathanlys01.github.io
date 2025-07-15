@@ -1,6 +1,6 @@
 ---
 title: "Wrong pose"
-excerpt: "Working pose quality assessment model<br/><img src='/images/portfolio/wp-demo.gif'>"
+excerpt: "Working pose quality assessment model<br/><img src='/images/portfolio/wp-demo.gif' width='50%'>"
 collection: portfolio
 date: 2023-06-01
 ---

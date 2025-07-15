@@ -30,6 +30,8 @@ redirect_from:
 {% include cv-template.html %}
 
 <div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+  <button onclick="window.print();" class="cv-download-link" style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 1rem; border: none; background-color:rgb(13, 34, 55); color: #fff; border-radius: 4px; cursor: pointer;">
+    <i class="fas fa-file-pdf"></i>
+    Download as PDF
+  </button>
 </div>
