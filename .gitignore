@@ -14,7 +14,10 @@ package-lock.json
 
 .DS_Store
 
-# Ignore the vendor file and bundle for alternative installation
+.DS_Store
+
+# Ignore the vendor file at root level and bundle for alternative installation
+/vendor/
 vendor/
 .bundle/
 
