@@ -51,4 +51,6 @@ html[data-theme="dark"] {
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
+    --info-color                        : #{$info-color};
+    --primary-cv-color: #a2b1b7;
 }

@@ -7,7 +7,7 @@ tags:
 excerpt: "Pre-train small LMs with a limited compute budget."
 ---
 
-<div style="border: 1px solid #e0e0e0; border-radius: 8px; background: #f5f7fa; padding: 1em; margin-bottom: 1.5em; display: flex; align-items: flex-start;">
+<div style="border: 1px solid #e0e0e0; border-radius: 8px; background: color-mix(in srgb, var(--global-bg-color), var(--info-color) 20%);padding: 1em; margin-bottom: 1.5em; display: flex; align-items: flex-start;">
   <span style="font-size: 1.5em; color:rgb(92, 159, 210); margin-right: 0.6em;">
     <i class="fa fa-lightbulb" aria-hidden="true">TLDR</i>
   </span>
