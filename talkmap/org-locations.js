@@ -11,7 +11,7 @@ var addressPoints = [
   ],
   [
     "University of Technology Sydney, Sydney, Australia",
-    -33.8832537,
+    -33.8832536,
     151.2003294
   ],
   [
@@ -33,5 +33,20 @@ var addressPoints = [
     "Universit\u00e9 de Lille",
     50.6285707,
     3.125956
+  ],
+  [
+    "Oxford University",
+    51.755223,
+    -1.230104
+  ],
+  [
+    "INRIA Grenoble",
+    45.2176946,
+    5.8078681
+  ],
+  [
+    "San Diego Convention Center, San Diego, USA",
+    32.7063756,
+    -117.1619249
   ]
 ];
