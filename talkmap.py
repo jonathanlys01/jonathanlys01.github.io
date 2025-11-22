@@ -20,8 +20,9 @@ places = [
     "Centre de Congrès de Lyon, Lyon, France",  # Conference
     "Hedelfinger Str. 61, 70327 Stuttgart, Germany",  # PhD Visit
     "Université de Lille",  # PhD Visit
-    # TODO "Oxford University",  # Summer School
-    # TODO "INRIA Grenoble",  # Summer School
+    "Oxford University",  # Summer School
+    "INRIA Grenoble",  # Summer School
+    "San Diego Convention Center, San Diego, USA",  # NeurIPS 2025
 ]
 # END EDIT
 

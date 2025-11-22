@@ -75,6 +75,6 @@ Publications
 Map
 ======
 
-<p style="text-decoration:underline;"><a href="{{ site.baseurl }}/visitmap.html">Map of places I visited for work: conferences, visits, internships...</a></p>
+<p style="text-decoration:underline;"><a href="{{ site.baseurl }}/visitmap.html">Map of places I visited for work: conferences, visits, internships, summer schools...</a></p>
 
 {% endif %}
