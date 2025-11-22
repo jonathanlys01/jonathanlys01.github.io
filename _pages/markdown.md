@@ -321,6 +321,21 @@ which wil render as:
 **Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
 {: .notice}
 
+**Info** This is an info notice.
+{: .notice--info}
+
+**Warning:** This is a warning notice.
+{: .notice--warning}
+
+**Danger:** This is a danger notice.
+{: .notice--danger}
+
+**Success:** This is a success notice.
+{: .notice--success}
+
+**Reflexion:** This is a reflexion notice.
+{: .notice--reflexion}
+
 ### Footnotes
 
 Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
@@ -453,4 +468,3 @@ This allows you to denote <var>variables</var>.
 **Footnotes**
 
 The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-

@@ -9,10 +9,10 @@ redirect_from:
 
 ## About Me
 
-I am a first-year PhD student at [IMT Atlantique](https://www.imt-atlantique.fr/en) in the [BRoader Artificial Intelligence (BRAIN)](http://recherche.imt-atlantique.fr/brain/) team. 
+I am a second-year PhD student at [IMT Atlantique](https://www.imt-atlantique.fr/en) in the [BRoader Artificial Intelligence (BRAIN)](http://recherche.imt-atlantique.fr/brain/) team. 
 My research interests include deep learning, computer vision, and natural language processing, with a focus on diffusion based generative models.
 
-My current projects can be found on my [GitHub profile](https://github.com/jonathanlys01). Previous projects can be seen in my [portfolio](https://jonathanlys01.github.io/portfolio/).
+My current projects can be found on my [GitHub profile](https://github.com/jonathanlys01).
 
 
 ## Publications (via HAL)

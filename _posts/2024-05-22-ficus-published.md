@@ -1,6 +1,5 @@
 ---
 title: 'Site Launch - Accepted paper at EUSIPCO 2024'
-date: 2024-05-22
 tags:
   - announcements
   - publications

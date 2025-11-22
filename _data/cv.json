@@ -3,7 +3,7 @@
     "name": "Jonathan Lys",
     "email": "jonathan.lys@imt-atlantique.org",
     "website": "https://jonathanlys01.github.io",
-    "summary": "First year PhD student at IMT Atlantique. Previously research intern in the Criteo AI Lab. Computer Vision, Natural Language Processing and Deep Learning enthusiast. I like to optimize the training and the generation of large language models and diffusion models.",
+    "summary": "Second year PhD student at IMT Atlantique. Previously research intern in the Criteo AI Lab. Computer Vision, Natural Language Processing and Deep Learning enthusiast. I like to optimize the training and the generation of large language models and diffusion models.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -13,15 +13,31 @@
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "heUq7WEAAAAJ",
+        "network": "fab fa-fw fa-github",
+        "name": "GitHub",
+        "url": "https://github.com/jonathanlys01"
+      },
+      {
+        "network": "fab fa-fw fa-linkedin",
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jonathan-lys/"
+      },
+      {
+        "network": "ai ai-google-scholar ai-fw",
+        "name": "Google Scholar",
         "url": "https://scholar.google.com/citations?user=heUq7WEAAAAJ"
       },
       {
-        "network": "GitHub",
-        "username": "jonathanlys01",
-        "url": "https://github.com/jonathanlys01"
+        "url": "https://imt-atlantique.hal.science/search/index/?q=*&authIdPerson_i=1399960",
+        "network": "ai ai-hal ai-fw",
+        "name": "HAL IMT Atlantique"
+      },
+      {
+        "network": "fa-regular fa-face-smile",
+        "name": "Hugging Face",
+        "url": "https://huggingface.co/jonathan-lys"
       }
+
     ]
   },
   "education": [

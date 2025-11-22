@@ -1,20 +1,17 @@
 ---
 title: "Pre-training Small LMs"
-date: 2025-07-16
 tags:
   - tech
   - llm
 excerpt: "Pre-train small LMs with a limited compute budget."
 ---
 
-<div style="border: 1px solid #e0e0e0; border-radius: 8px; background: color-mix(in srgb, var(--global-bg-color), var(--info-color) 20%);padding: 1em; margin-bottom: 1.5em; display: flex; align-items: flex-start;">
-  <span style="font-size: 1.5em; color:rgb(92, 159, 210); margin-right: 0.6em;">
-    <i class="fa fa-lightbulb" aria-hidden="true">TLDR</i>
-  </span>
-  <div>
-    A primer on how to pre-train small language models in the 1B-2B range, with a limited compute budget.
-  </div>
-</div>
+{% include toc %}
+
+
+**TLDR**: A primer on how to pre-train small language models in the 1B-2B range, with a limited compute budget.
+{: .notice--info}
+
 
 ## Scaling laws
 
@@ -165,7 +162,7 @@ The [NanoGPT speedrun](https://github.com/KellerJordan/modded-nanogpt) used this
 
 
 <p align="center">
-  <img src="https://github.com/KellerJordan/modded-nanogpt/raw/master/img/nanogpt_speedrun51.png" alt="nanogpt speedrun" with="80%">
+  <img src="https://github.com/KellerJordan/modded-nanogpt/raw/master/img/nanogpt_speedrun51.png" alt="nanogpt speedrun" width="80%">
   <br>
   <sub><i>Scaling the speedrun to 1.5B models</i></sub>
 </p>
@@ -183,7 +180,7 @@ The largest pre-training runs leveraging this optimizer are from Kimi. [Moonligh
 A [study](https://arxiv.org/pdf/2505.02222) by Essential AI even combines muP and Muon for better performance, showing a good data efficiency and short training time.
 
 
-### References
+## References
 
 <div style="border: 1px solid #ccc; padding: 1em; border-radius: 8px; background: transparent;">
   <ul>

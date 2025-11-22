@@ -11,7 +11,7 @@ $light-gray                 : mix(#fff, $gray, 50%);
 $background                 : #2b2f31;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
+$text                       : hsl(40, 10%, 91%);
 $link                       : #0ea1c5;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
@@ -22,6 +22,7 @@ $info-color                 : #2f7f93;
 $notice-color               : #7a8288;
 $success-color              : #62c462;
 $warning-color              : #f89406;
+$reflexion-color            : #ad76ff;
 
 /* Other basic settings for the template */
 $border-radius              : 4px;

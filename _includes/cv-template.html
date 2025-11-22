@@ -15,12 +15,6 @@
       </div>
       {% endif %}
       
-      {% if cv.basics.phone %}
-      <div class="cv-contact-item">
-        <i class="fas fa-phone"></i> {{ cv.basics.phone }}
-      </div>
-      {% endif %}
-      
       {% if cv.basics.website %}
       <div class="cv-contact-item">
         <i class="fas fa-globe"></i> <a href="{{ cv.basics.website }}" target="_blank">{{ cv.basics.website }}</a>
@@ -38,7 +32,7 @@
     <div class="cv-profiles">
       {% for profile in cv.basics.profiles %}
       <a href="{{ profile.url }}" target="_blank" class="cv-profile-link">
-        <i class="fab fa-{{ profile.network | downcase }}"></i> {{ profile.network }}
+        <i class="{{ profile.network }}" aria-hidden="true"> </i>{{ profile.name }}
       </a>
       {% endfor %}
     </div>

@@ -16,10 +16,10 @@
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
   text-indent: initial; /* override*/
-  background-color: mix(#fff, $notice-color, 90%);
+  background-color: color-mix(in srgb, var(--global-bg-color), $notice-color 20%);
   border-radius: $border-radius;
-  box-shadow: 0 1px 1px rgba($notice-color, 0.25);
-  color: var(--global-code-text-color);
+  border: 1px solid color-mix(in srgb, var(--global-text-color) 1%, $notice-color 10%);
+  color: var(--global-text-color);
 
   h4 {
     margin-top: 0 !important; /* override*/
@@ -97,4 +97,46 @@
 
 .notice--danger {
   @include notice($danger-color);
+}
+
+.notice--reflexion {
+  @include notice($reflexion-color);
+}
+
+
+/* Icon for notices */
+/* Uses Font Awesome 6 Free, so make sure to include it in your project */
+
+@mixin notice-icon($content, $color) {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: $content;
+  margin-right: 0.5em;
+  color: $color;
+  display: inline-block;
+}
+
+.notice::before,
+.notice--primary::before {
+  @include notice-icon("\f249", $notice-color);
+}
+
+.notice--info::before {
+  @include notice-icon("\f05a", $info-color);
+}
+
+.notice--warning::before {
+  @include notice-icon("\f071", $warning-color);
+}
+
+.notice--success::before {
+  @include notice-icon("\f058", $success-color);
+}
+
+.notice--danger::before {
+  @include notice-icon("\f057", $danger-color);
+}
+
+.notice--reflexion::before {
+  @include notice-icon("\f06d", $reflexion-color);
 }
