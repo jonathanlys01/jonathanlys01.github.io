@@ -1,3 +1,7 @@
+/* ==========================================================================
+   JSON CV
+   ========================================================================== */
+
 /* CV Template Styles */
 
 .cv-container {
@@ -11,7 +15,7 @@
 /* Header Styles */
 .cv-header {
   margin-bottom: 2rem;
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 2px solid var(--global-thead-color );
   padding-bottom: 1rem;
 }
 
@@ -60,7 +64,7 @@
 }
 
 .cv-section h2 {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--global-border-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   display: flex;
@@ -70,8 +74,13 @@
 }
 
 /* Item Styles */
+
 .cv-item {
   margin-bottom: 1.0rem;
+}
+
+.cv-list {
+  list-style-type: none;
 }
 
 .cv-item-header {
@@ -107,11 +116,6 @@
   margin-bottom: 0.25rem;
 }
 
-.cv-item-courses ul {
-  margin-top: 0.25rem;
-  padding-left: 1.5rem;
-}
-
 .cv-item-courses li {
   margin-bottom: 0.25rem;
 }
@@ -135,7 +139,7 @@
 }
 
 .cv-skill-keyword {
-  background-color: #f2f2f2;
+  background-color: var(--global-bg-color);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -150,8 +154,8 @@
 }
 
 .cv-project-keyword {
-  background-color: #e6f3ff;
-  color: #2a7ae2;
+  background-color: var(--global-bg-color);
+  color: var(--global-thead-color);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -174,7 +178,7 @@
 }
 
 .cv-language-fluency {
-  color: #666;
+  color: var(--global-text-color);
   font-size: 0.9rem;
 }
 
@@ -187,7 +191,7 @@
 
 .cv-interest h3 {
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--global-text-color);
 }
 
 .cv-interest-keywords {
@@ -197,7 +201,7 @@
 }
 
 .cv-interest-keyword {
-  background-color: #f9f9f9;
+  background-color: var(--global-bg-color);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -206,7 +210,7 @@
 /* References Styles */
 .cv-references {
   font-style: italic;
-  color: #666;
+  color: var(--global-text-color);
 }
 
 /* Print Styles */
@@ -216,17 +220,17 @@
   }
   
   .cv-header {
-    border-bottom-color: #ccc;
+    border-bottom-color: var(--global-border-color);
   }
   
   .cv-section h2 {
-    border-bottom-color: #ccc;
+    border-bottom-color: var(--global-border-color);
   }
   
   .cv-skill-keyword,
   .cv-project-keyword,
   .cv-interest-keyword {
-    border: 1px solid #ccc;
+    border: 1px solid var(--global-border-color);
     background-color: transparent;
   }
 }

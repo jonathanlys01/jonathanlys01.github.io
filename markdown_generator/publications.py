@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # # Publications markdown generator for academicpages
@@ -44,15 +43,12 @@ publications
 
 # In[4]:
 
-html_escape_table = {
-    "&": "&amp;",
-    '"': "&quot;",
-    "'": "&apos;"
-    }
+html_escape_table = {"&": "&amp;", '"': "&quot;", "'": "&apos;"}
+
 
 def html_escape(text):
     """Produce entities within text."""
-    return "".join(html_escape_table.get(c,c) for c in text)
+    return "".join(html_escape_table.get(c, c) for c in text)
 
 
 # ## Creating the markdown files
@@ -65,16 +61,16 @@ import os
 
 
 for row, item in publications.iterrows():
-
     md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
     html_filename = str(item.pub_date) + "-" + item.url_slug
     year = item.pub_date[:4]
 
     ## YAML variables
 
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = '---\ntitle: "' + item.title + '"\n'
 
-    md += """collection: publications"""
+    # TODO Update to use the category assigned in the TSV file
+    md += """collection: manuscripts"""
 
     md += """\npermalink: /publication/""" + html_filename
 
@@ -104,7 +100,5 @@ for row, item in publications.iterrows():
 
     md_filename = os.path.basename(md_filename)
 
-    with open("../_publications/" + md_filename, 'w') as f:
+    with open("../_publications/" + md_filename, "w") as f:
         f.write(md)
-
-

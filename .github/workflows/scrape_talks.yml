@@ -3,6 +3,7 @@ name: Scrape Talk Locations
 on:
   push:
     paths:
+      - '_talks/**'
       - 'talkmap.py'
 
 jobs:
