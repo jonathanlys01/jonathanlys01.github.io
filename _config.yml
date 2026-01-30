@@ -10,7 +10,6 @@
 locale                   : "en-US"
 title                    : "Jonathan Lys"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Jonathan Lys"
 description              : &description "PhD student @ IMT Atlantique"
