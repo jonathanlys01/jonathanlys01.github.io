@@ -9,6 +9,8 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Jonathan Lys"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Jonathan Lys"
 description              : &description "PhD student @ IMT Atlantique"
@@ -39,8 +41,12 @@ author:
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  ssrn             : # URL
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
+  zotero           : # URL
+
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
