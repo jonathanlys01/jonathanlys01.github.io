@@ -9,6 +9,17 @@ body {
 }
 
 /* ==========================================================================
+   NOTICE DEFAULT COLORS (THEMES CAN OVERRIDE)
+   ========================================================================== */
+
+$danger-color               : #ee5f5b !default;
+$info-color                 : #2f7f93 !default;
+$notice-color               : #7a8288 !default;
+$success-color              : #62c462 !default;
+$warning-color              : #f89406 !default;
+$reflexion-color            : #ad76ff !default;
+
+/* ==========================================================================
    TYPOGRAPHY
    ========================================================================== */
 
