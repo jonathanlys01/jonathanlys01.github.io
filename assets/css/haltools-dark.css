@@ -1,0 +1,47 @@
+/* HAL tools iframe theme - dark */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e8ecef;
+  background-color: #252a34;
+}
+
+a {
+  color: #0ea1c5;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.35rem 0.6rem;
+  border-bottom: 1px solid #39424a;
+  text-align: left;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background-color: #2f3640;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

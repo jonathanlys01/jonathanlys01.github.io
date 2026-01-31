@@ -19,9 +19,12 @@ My current projects can be found on my [GitHub profile](https://github.com/jonat
 
 
 <div style="overflow:auto; border-radius:8px; border:1px solid rgb(228, 228, 228)">
-  <iframe 
-    src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?idHal=1399960&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_DOI=oui&CB_vignette=oui&langue=all&tri_exp=date_publi&tri_exp2=titre&tri_exp3=typdoc&ordre_aff=TA&Fen=Aff" 
-    width="100%" 
+  <iframe
+    class="haltools-iframe"
+    data-haltools-css-light="{{ '/assets/css/haltools-light.css' | absolute_url }}"
+    data-haltools-css-dark="{{ '/assets/css/haltools-dark.css' | absolute_url }}"
+    src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?idHal=1399960&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_DOI=oui&CB_vignette=oui&langue=all&tri_exp=date_publi&tri_exp2=titre&tri_exp3=typdoc&ordre_aff=TA&Fen=Aff"
+    width="100%"
     height="30%"
     frameborder="0">
   </iframe>
