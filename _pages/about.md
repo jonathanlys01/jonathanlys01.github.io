@@ -20,9 +20,12 @@ My current projects can be found on my [GitHub profile](https://github.com/jonat
 
 <div style="overflow:auto; border-radius:8px; border:1px solid rgb(228, 228, 228)">
   <iframe
-    src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Jonathan+Lys&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&CB_rubriqueDiv=oui&Fen=Aff&css=https://jonathanlys01.github.io/assets/css/haltools-iframe.css"
+    class="haltools-iframe"
+    data-haltools-css-light="{{ '/assets/css/haltools-iframe-light.css' | absolute_url }}"
+    data-haltools-css-dark="{{ '/assets/css/haltools-iframe-dark.css' | absolute_url }}"
+    src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Jonathan+Lys&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&CB_rubriqueDiv=oui&Fen=Aff&css=https://jonathanlys01.github.io/assets/css/haltools-iframe-light.css"
     width="100%"
-    height="30%"
+    height="200vh"
     frameborder="0">
   </iframe>
 </div>

@@ -1,25 +1,13 @@
-/* HAL tools condensed theme (light/dark via prefers-color-scheme) */
+/* HAL tools iframe theme - dark */
 :root {
-  color-scheme: light dark;
-  --hal-bg: #ffffff;
-  --hal-text: #1f2326;
-  --hal-muted: #5f6770;
-  --hal-border: #d7dbe0;
-  --hal-row: #f6f7f9;
-  --hal-accent: #2f7f93;
-  --hal-accent-strong: #1f5c6b;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --hal-bg: #252a34;
-    --hal-text: #e7ebef;
-    --hal-muted: #b1b7c0;
-    --hal-border: #3a424b;
-    --hal-row: #2f3640;
-    --hal-accent: #0ea1c5;
-    --hal-accent-strong: #74cfe3;
-  }
+  color-scheme: dark;
+  --hal-bg: #252a34;
+  --hal-text: #e8ecef;
+  --hal-muted: #b1b7c0;
+  --hal-border: #3a424b;
+  --hal-row: #2f3640;
+  --hal-accent: #0ea1c5;
+  --hal-accent-strong: #74cfe3;
 }
 
 * {
@@ -99,10 +87,7 @@ tr:nth-child(even) td {
   color: var(--hal-accent);
 }
 
-.Auteurs {
-  color: var(--hal-muted);
-}
-
+.Auteurs,
 .detail_revue,
 .detail_conf,
 .detail_cours,
