@@ -63,7 +63,12 @@ tr:nth-child(even) td {
 }
 
 .Rubrique {
+  color: var(--hal-accent);
   border-bottom: 2px solid var(--hal-accent);
+}
+
+.SousRubrique {
+  color: var(--hal-accent-strong);
 }
 
 .NoticeRes,
@@ -87,6 +92,16 @@ tr:nth-child(even) td {
   color: var(--hal-accent);
 }
 
+.LienDoc,
+.LienDoc a {
+  color: var(--hal-accent-strong);
+}
+
+.LienDoc a:hover,
+.LienDoc a:focus {
+  text-decoration: underline;
+}
+
 .Auteurs,
 .detail_revue,
 .detail_conf,
@@ -105,6 +120,18 @@ tr:nth-child(even) td {
 .DOI,
 .Identifiant {
   color: var(--hal-text);
+}
+
+.DOI a,
+.Identifiant a {
+  color: var(--hal-accent-strong);
+}
+
+.DOI a:hover,
+.DOI a:focus,
+.Identifiant a:hover,
+.Identifiant a:focus {
+  text-decoration: underline;
 }
 
 img {
