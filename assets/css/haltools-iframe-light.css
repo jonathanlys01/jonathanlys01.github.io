@@ -86,6 +86,15 @@ tr:nth-child(even) td {
   margin-left: 1em;
 }
 
+.ValeurRes a {
+  color: var(--hal-accent-strong);
+}
+
+.ValeurRes a:hover,
+.ValeurRes a:focus {
+  text-decoration: underline;
+}
+
 .Titre,
 .Titre a {
   font-weight: 700;
