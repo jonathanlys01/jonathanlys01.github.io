@@ -56,6 +56,8 @@
 .cv-profile-item a {
   color: var(--primary-cv-color);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .cv-profile-icon {
@@ -66,6 +68,7 @@
   justify-content: center;
   margin-right: 0.35em;
   color: var(--primary-cv-color);
+  line-height: 1;
 }
 
 .cv-profile-icon svg,
@@ -75,25 +78,10 @@
   display: block;
 }
 
-.cv-profile-icon svg {
-  fill: currentColor;
-}
 
-.cv-profile-icon.hf-icon {
-  width: 1.2em;
-  height: 1.2em;
-}
-
-.cv-profile-icon.hf-icon svg {
-  width: 1.2em;
-  height: 1.2em;
-}
-.cv-profile-icon.hf-icon svg {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.cv-profile-icon.hf-icon img {
+  height: 1em;
+  width: 1em;
   transform: translateY(0.2em);
 }
 
