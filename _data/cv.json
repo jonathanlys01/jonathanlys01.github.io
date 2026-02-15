@@ -28,7 +28,7 @@
         "url": "https://scholar.google.com/citations?user=heUq7WEAAAAJ"
       },
       {
-        "url": "https://imt-atlantique.hal.science/search/index/?q=*&authIdPerson_i=1399960",
+        "url": "https://imt-atlantique.hal.science/search/index/?q=*&authIdPerson_i=1578764",
         "network": "ai ai-hal ai-fw",
         "name": "HAL IMT Atlantique"
       },
@@ -44,7 +44,7 @@
     {
       "institution": "IMT Atlantique, BRAIN Team",
       "area": "Ph.D Student in Computer Science",
-      "date": "2027",
+      "date": "2024 - 2027",
       "description": "Focusing on discrete diffusion models and NLP applications.<br> Supervised by Vincent Gripon, Bastien Pasdeloup, Axel Marmoret."
     },
     {
@@ -109,23 +109,23 @@
     },
     {
       "name": "Machine Learning",
-      "keywords": ["numpy", "Pandas", "sklearn", "statistical and probabilistic models", "data analysis"]
+      "keywords": ["numpy", "pandas", "sklearn", "Statistical and probabilistic models", "Data analysis"]
     },
     {
       "name": "Deep Learning",
-      "keywords": ["PyTorch (distributed)", "TensorFlow/Keras", "triton","CNNs and Transformers training"]
+      "keywords": ["PyTorch (distributed)", "TensorFlow/Keras","CNNs and Transformers training", "triton"]
     },
     {
-      "name": "Hugging Face",
+      "name": "Hugging Face libraries",
       "keywords": ["transformers", "diffusers", "datasets", "accelerate"]
     },
     {
       "name": "Distributed Systems",
-      "keywords": ["multi-gpu/multi-node training", "SLURM","Hadoop", "Spark"]
+      "keywords": ["Multi-gpu/multi-node training", "SLURM","Hadoop", "Spark"]
     },
     {
       "name": "Soft Skills",
-      "keywords": ["teamwork", "communication", "Agile methods", "problem solving"]
+      "keywords": ["Teamwork", "Communication", "Agile methods", "Problem solving"]
     }
 
   ],
@@ -148,9 +148,9 @@
     }
   ],
   "interests": [
-    "music (violin for 12 years)",
-    "competitive chess (World top 0.3% online)",
-    "photography"
+    "Music (violin for 12 years)",
+    "Competitive chess (World top 0.3% online)",
+    "Photography"
   ],
   "associations": [
     {

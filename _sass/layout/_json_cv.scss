@@ -17,6 +17,7 @@
   margin-bottom: 2rem;
   border-bottom: 2px solid var(--global-thead-color );
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .cv-header h1 {
@@ -29,6 +30,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 0.5rem;
+  justify-content: center;
 }
 
 .cv-contact-item {
@@ -41,6 +43,8 @@
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cv-profile-item {
@@ -52,6 +56,45 @@
 .cv-profile-item a {
   color: var(--primary-cv-color);
   text-decoration: none;
+}
+
+.cv-profile-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.35em;
+  color: var(--primary-cv-color);
+}
+
+.cv-profile-icon svg,
+.cv-profile-icon img {
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+
+.cv-profile-icon svg {
+  fill: currentColor;
+}
+
+.cv-profile-icon.hf-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.cv-profile-icon.hf-icon svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+.cv-profile-icon.hf-icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: translateY(0.2em);
 }
 
 .cv-profile-item a:hover {
@@ -81,6 +124,8 @@
 
 .cv-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cv-item-header {
@@ -104,6 +149,10 @@
 }
 
 .cv-item-summary {
+  margin-bottom: 0.5rem;
+}
+
+.cv-item-detail {
   margin-bottom: 0.5rem;
 }
 

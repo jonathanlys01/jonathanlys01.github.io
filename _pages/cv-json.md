@@ -9,6 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .page__title {
+    text-align: center;
+  }
+</style>
+
 {% include cv-template.html %}
 
 <div class="cv-download-links" align="center" style="margin-top: 20px;">
