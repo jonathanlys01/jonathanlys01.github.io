@@ -111,6 +111,26 @@
   font-family: "JetBrains Mono", monospace;
 }
 
+.page--post .page__meta,
+.page--post .page__date,
+.page--post .page__meta-title {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.page--post .page__content h1,
+.page--post .page__content h2,
+.page--post .page__content h3,
+.page--post .page__content h4,
+.page--post .page__content h5,
+.page--post .page__content h6 {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+
+.page--post .page__title {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;

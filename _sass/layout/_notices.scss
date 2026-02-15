@@ -103,6 +103,16 @@
   @include notice($reflexion-color);
 }
 
+.page--post .notice,
+.page--post .notice--primary,
+.page--post .notice--info,
+.page--post .notice--warning,
+.page--post .notice--success,
+.page--post .notice--danger,
+.page--post .notice--reflexion {
+  font-family: "JetBrains Mono", monospace;
+}
+
 
 /* Icon for notices */
 /* Uses Font Awesome 6 Free, so make sure to include it in your project */
