@@ -69,6 +69,13 @@ for row, item in publications.iterrows():
 
     md = '---\ntitle: "' + item.title + '"\n'
 
+    if "authors" in item.index and len(str(item.authors)) > 5:
+        authors_val = str(item.authors)
+        for pattern in ["Jonathan Lys", "J. Lys", "J Lys"]:
+            if pattern in authors_val and f"<b>{pattern}</b>" not in authors_val:
+                authors_val = authors_val.replace(pattern, f"<b>{pattern}</b>")
+        md += "authors: \"" + authors_val + "\"\n"
+
     # TODO Update to use the category assigned in the TSV file
     md += """collection: manuscripts"""
 

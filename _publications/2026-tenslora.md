@@ -1,5 +1,6 @@
 ---
 title: "TENSLORA: Tensor Alternatives for Low-Rank Adaptation"
+authors: "Axel Marmoret, Reda Bensaid, <b>Jonathan Lys</b>, Vincent Gripon, François Leduc-Primeau"
 collection: publications
 category: conferences
 permalink: /publication/2026-tenslora

@@ -1,5 +1,6 @@
 ---
 title: "FICUS: Few-shot Image Classification with Unsupervised Segmentation"
+authors: "<b>Jonathan Lys</b>, Frédéric Lin, Clément Béliveau, Jules Decaestecker, Yassir Bendou, Aymane Abdali, Bastien Pasdeloup"
 collection: publications
 category: conferences
 permalink: /publication/2024-ficus

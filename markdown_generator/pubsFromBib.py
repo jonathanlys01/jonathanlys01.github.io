@@ -112,10 +112,23 @@ for pubsource in publist:
             citation = citation + ", " + pub_year + "."
 
 
+            # Pull author names and bold Jonathan Lys
+            authors_list = []
+            for author in bibdata.entries[bib_id].persons["author"]:
+                first = html_escape(" ".join(author.first_names))
+                last = html_escape(" ".join(author.last_names))
+                name = f"{first} {last}"
+                if "Lys" in last and ("Jonathan" in first or first.startswith("J")):
+                    name = f"<b>{name}</b>"
+                authors_list.append(name)
+            authors_str = ", ".join(authors_list)
+
             ## YAML variables
             md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
 
             md += """collection: """ +  publist[pubsource]["collection"]["name"]
+
+            md += "\nauthors: \"" + authors_str + "\""
 
             md += """\npermalink: """ + publist[pubsource]["collection"]["permalink"]  + html_filename
 
