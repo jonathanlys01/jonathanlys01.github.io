@@ -1,8 +1,8 @@
 var addressPoints = [
   [
     "IMT Atlantique, Brest, France",
-    48.3606868,
-    -4.5716376
+    48.3578233,
+    -4.570741
   ],
   [
     "Service de l'Informatique, Papeete, French Polynesia",
@@ -41,13 +41,13 @@ var addressPoints = [
   ],
   [
     "INRIA Grenoble",
-    45.2176946,
-    5.8078681
+    45.2182995,
+    5.8064266
   ],
   [
     "San Diego Convention Center, San Diego, USA",
     32.7063756,
-    -117.1619249
+    -117.1619257
   ],
   [
     "BMCC, Bruges, Belgium",
