@@ -1,23 +1,23 @@
 "NeurIPS":
   url: "https://neurips.cc"
-  color: "#b43b12"
+  color: "#c25e2e"
 
 "ICASSP":
   url: "https://2026.ieeeicassp.org"
-  color: "#1d4ed8"
+  color: "#25637b"
 
 "WCCI":
   url: "https://wcci2026.org"
-  color: "#047857"
+  color: "#2d7a6e"
 
 "EUSIPCO":
   url: "https://eurasip.org"
-  color: "#6d28d9"
+  color: "#4f5d95"
 
 "Preprint":
   url: "https://arxiv.org"
-  color: "#475569"
+  color: "#546e7a"
 
 "HAL":
   url: "https://hal.science"
-  color: "#c2410c"
+  color: "#b0573c"
