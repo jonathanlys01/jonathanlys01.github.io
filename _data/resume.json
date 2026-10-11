@@ -3,10 +3,9 @@
     "name": "Jonathan Lys",
     "email": "jonathan.lys@imt-atlantique.org",
     "website": "https://jonathanlys01.github.io",
+    "url": "https://jonathanlys01.github.io",
     "summary": "Third year PhD student at IMT Atlantique. Previously research intern in the Criteo AI Lab. Computer Vision, Natural Language Processing and Deep Learning enthusiast. I like to optimize the training and the generation of large language models and diffusion models.",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Brest",
       "countryCode": "FR",
       "region": "Bretagne"
@@ -58,21 +57,38 @@
     {
       "institution": "IMT Atlantique, BRAIN Team",
       "area": "Ph.D Student in Computer Science",
-      "date": "2024 - 2027",
-      "description": "Focusing on discrete diffusion models for  NLP applications and EEG models. <br> Supervised by Vincent Gripon, Bastien Pasdeloup, Axel Marmoret."
+      "startDate": "2024",
+      "endDate": "2027",
+      "highlights": [
+        "Focusing on discrete diffusion models for NLP applications and EEG models.",
+        "Supervised by Vincent Gripon, Bastien Pasdeloup, Axel Marmoret."
+      ]
     },
     {
       "institution": "IMT Atlantique",
       "area": "Engineering Degree",
-      "date": "2021 - 2024",
-      "courses": ["Machine Learning", "Deep Learning", "Computer Vision", "Signal Processing", "Optimization"],
-      "description": "Mathematical and Computational Engineering specialization."
+      "startDate": "2021",
+      "endDate": "2024",
+      "courses": [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Signal Processing",
+        "Optimization"
+      ],
+      "highlights": [
+        "Mathematical and Computational Engineering specialization."
+      ]
     },
     {
       "institution": "University of Rennes 1",
       "area": "M.Sc. Engineering Sciences and Applications",
-      "date": "2023 - 2024",
-      "description": "Double degree program with Rennes 1 and CentraleSupélec.<br> Signal and Image processing major."
+      "startDate": "2023",
+      "endDate": "2024",
+      "highlights": [
+        "Double degree program with Rennes 1 and CentraleSupélec.",
+        "Signal and Image processing major."
+      ]
     }
   ],
   "work": [
@@ -102,7 +118,7 @@
     {
       "company": "IMT Atlantique, BRAIN Team, Brest, France",
       "position": "Research Intern",
-      "startDate": "Summer 2023",
+      "date": "Summer 2023",
       "summary": "Studied parameter-efficient fine-tuning methods for SAM and attention-based data augmentation techniques. Supervised by Bastien Pasdeloup.",
       "highlights": [
         "Matched the performance of full fine-tuning with a custom LoRA method.",
@@ -112,36 +128,67 @@
     {
       "company": "French Polynesia’s government IT Department, Papeete, French Polynesia",
       "position": "Developer Intern",
-      "startDate": "February 2022",
+      "date": "February 2022",
       "summary": "Development of a Web application for network management, automation of database migrations"
     }
   ],
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Python", "Julia, R", "Java, SQL", "C++", "Matlab"]
+      "keywords": [
+        "Python",
+        "Julia, R",
+        "Java, SQL",
+        "C++",
+        "Matlab"
+      ]
     },
     {
       "name": "Machine Learning",
-      "keywords": ["numpy", "pandas", "sklearn", "Statistical and probabilistic models", "Data analysis"]
+      "keywords": [
+        "numpy",
+        "pandas",
+        "sklearn",
+        "Statistical and probabilistic models",
+        "Data analysis"
+      ]
     },
     {
       "name": "Deep Learning",
-      "keywords": ["PyTorch (distributed)", "TensorFlow/Keras","CNNs and Transformers training", "triton"]
+      "keywords": [
+        "PyTorch (distributed)",
+        "TensorFlow/Keras",
+        "CNNs and Transformers training",
+        "triton"
+      ]
     },
     {
       "name": "Hugging Face libraries",
-      "keywords": ["transformers", "diffusers", "datasets", "accelerate"]
+      "keywords": [
+        "transformers",
+        "diffusers",
+        "datasets",
+        "accelerate"
+      ]
     },
     {
       "name": "Distributed Systems",
-      "keywords": ["Multi-gpu/multi-node training", "SLURM","Hadoop", "Spark"]
+      "keywords": [
+        "Multi-gpu/multi-node training",
+        "SLURM",
+        "Hadoop",
+        "Spark"
+      ]
     },
     {
       "name": "Soft Skills",
-      "keywords": ["Teamwork", "Communication", "Agile methods", "Problem solving"]
+      "keywords": [
+        "Teamwork",
+        "Communication",
+        "Agile methods",
+        "Problem solving"
+      ]
     }
-
   ],
   "languages": [
     {
@@ -156,15 +203,27 @@
       "language": "Mandarin",
       "fluency": "B2.1, HSK3 equivalent"
     },
-
     {
-      "language": "notions of Spanish and German"
+      "language": "Spanish and German",
+      "fluency": "notions"
     }
   ],
   "interests": [
-    "Music (violin for 12 years)",
-    "Competitive chess (World top 0.3% online)",
-    "Photography"
+    {
+      "name": "Music",
+      "keywords": [
+        "violin for 12 years"
+      ]
+    },
+    {
+      "name": "Competitive chess",
+      "keywords": [
+        "World top 0.3% online"
+      ]
+    },
+    {
+      "name": "Photography"
+    }
   ],
   "associations": [
     {
@@ -195,6 +254,5 @@
       "name": "IMTA Chess Association",
       "role": "Member"
     }
-
   ]
 }

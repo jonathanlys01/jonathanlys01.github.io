@@ -23,122 +23,309 @@
 @use "teachings";
 @use "typograms";
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
 /* ==========================================================================
-   Refined Modern Academic Theme & Palette
+   Theme Variables (#9AC2C9 Accent + Off-white Light Mode)
    ========================================================================== */
 
 :root {
-  /* Core brand & accent: authoritative Cobalt Blue */
-  --global-theme-color: #2563eb;
-  --global-hover-color: #1d4ed8;
-
-  /* Surfaces & text */
-  --global-bg-color: #ffffff;
+  --global-theme-color: #9AC2C9;
+  --global-hover-color: #7daeb5;
+  --global-bg-color: #f3f6f7;
   --global-card-bg-color: #ffffff;
-  --global-text-color: #0f172a;       /* Slate 900 */
-  --global-text-color-light: #475569; /* Slate 600 */
-  --global-divider-color: #e2e8f0;    /* Slate 200 */
-
-  /* Code & highlights */
-  --global-code-bg-color: #f1f5f9;
-  --global-highlight-color: #2563eb;
-
-  /* Footer */
-  --global-footer-bg-color: #0f172a;
-  --global-footer-text-color: #94a3b8;
-  --global-footer-link-color: #f8fafc;
+  --global-text-color: #2b3638;
+  --global-text-color-light: #5c6f72;
+  --global-divider-color: #d9e2e4;
+  --global-code-bg-color: #e6edef;
+  --global-highlight-color: #ffcb47;
+  --global-footer-bg-color: #1a2427;
+  --global-footer-text-color: #97abb0;
+  --global-footer-link-color: #9AC2C9;
 }
 
 html[data-theme="dark"] {
-  /* Dark mode accent: crisp sky blue */
-  --global-theme-color: #38bdf8;
-  --global-hover-color: #7dd3fc;
-
-  /* Surfaces & text */
-  --global-bg-color: #0b0f19;         /* Midnight deep slate */
-  --global-card-bg-color: #111827;    /* Slate 900 card surface */
-  --global-text-color: #f8fafc;       /* Crisp off-white */
-  --global-text-color-light: #94a3b8; /* Slate 400 */
-  --global-divider-color: #1e293b;    /* Dark divider */
-
-  /* Code & highlights */
-  --global-code-bg-color: #1e293b;
-  --global-highlight-color: #38bdf8;
-
-  /* Footer */
-  --global-footer-bg-color: #030712;
-  --global-footer-text-color: #94a3b8;
-  --global-footer-link-color: #f8fafc;
+  --global-theme-color: #9AC2C9;
+  --global-hover-color: #b9d8c2;
+  --global-bg-color: #0f1518;
+  --global-card-bg-color: #162024;
+  --global-text-color: #f0f4f5;
+  --global-text-color-light: #8fa2a6;
+  --global-divider-color: #223137;
+  --global-code-bg-color: #1a252a;
+  --global-highlight-color: #ffcb47;
+  --global-footer-bg-color: #090e10;
+  --global-footer-text-color: #8fa2a6;
+  --global-footer-link-color: #9AC2C9;
 }
 
-/* Publication styling polish */
-.publications {
-  ol.bibliography {
-    li {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--global-divider-color);
+/* ==========================================================================
+   Typography: Google Sans (Global) & JetBrains Mono (Notes / Code)
+   ========================================================================== */
 
-      &:last-child {
-        border-bottom: none;
-      }
+html,
+body,
+p,
+span,
+a,
+li,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea,
+.navbar,
+.card {
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
-      .title {
-        font-weight: 600;
-        color: var(--global-text-color);
-        font-size: 1.05rem;
-        line-height: 1.4;
-      }
+body {
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  -webkit-font-smoothing: antialiased;
+}
 
-      .author {
-        margin-top: 0.2rem;
-        color: var(--global-text-color-light);
-        font-size: 0.95rem;
+/* Icons must always retain their respective icon fonts */
+i,
+.fa,
+.fab,
+.fas,
+.far,
+.fa-solid,
+.fa-regular,
+.fa-brands,
+.ai,
+[class*="fa-"],
+[class*="ai-"] {
+  font-family: var(--fa-family, var(--_fa-family, "Font Awesome 7 Free")) !important;
 
-        em {
-          font-weight: 700;
-          color: var(--global-theme-color);
-          font-style: normal;
-          text-decoration: underline;
-          text-underline-offset: 3px;
-        }
-      }
+  &::before,
+  &::after {
+    font-family: inherit !important;
+  }
+}
 
-      .periodical {
-        font-size: 0.9rem;
-        color: var(--global-text-color-light);
-      }
+.fa-brands,
+.fab,
+[class*="fa-brands"] {
+  font-family: "Font Awesome 7 Brands", "Font Awesome 5 Brands", "FontAwesome" !important;
 
-      .links {
-        margin-top: 0.5rem;
+  &::before,
+  &::after {
+    font-family: inherit !important;
+  }
+}
 
-        a.btn {
-          border-radius: 6px;
-          font-size: 0.78rem;
-          font-weight: 500;
-          padding: 0.22rem 0.6rem;
-          margin-right: 0.35rem;
-          margin-bottom: 0.35rem;
-          border: 1px solid var(--global-divider-color);
-          background-color: transparent;
-          color: var(--global-theme-color);
-          transition: all 0.15s ease-in-out;
+.ai,
+[class*="ai-"] {
+  font-family: "Academicons" !important;
 
-          &:hover {
-            background-color: var(--global-theme-color);
-            color: var(--global-bg-color) !important;
-            border-color: var(--global-theme-color);
-            transform: translateY(-1px);
-          }
-        }
-      }
+  &::before,
+  &::after {
+    font-family: inherit !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  color: var(--global-text-color);
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+
+    &:hover {
+      color: var(--global-theme-color) !important;
     }
   }
 }
 
-/* Project card subtle hover lift */
+code, kbd, samp, pre {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+/* Notes page and posts exclusively use JetBrains Mono */
+.blog-page,
+.blog-page *,
+.post-title,
+.post-title *,
+.post-meta,
+.post-meta *,
+.post-tags,
+.post-tags *,
+.post-content,
+.post-content *,
+article.post-content,
+article.post-content *,
+.post:has(article.post-content),
+.post:has(article.post-content) * {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+/* ==========================================================================
+   Navigation & Links
+   ========================================================================== */
+
+a {
+  color: #265d66;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: #163e44;
+  }
+}
+
+html[data-theme="dark"] a {
+  color: #9AC2C9;
+
+  &:hover {
+    color: #b9d8c2;
+  }
+}
+
+.navbar {
+  background-color: var(--global-bg-color);
+
+  .nav-item.active .nav-link {
+    font-weight: 600;
+    color: #265d66 !important;
+  }
+}
+
+html[data-theme="dark"] .navbar .nav-item.active .nav-link {
+  color: #9AC2C9 !important;
+}
+
+/* ==========================================================================
+   Notes ASCII Banner
+   ========================================================================== */
+
+.blog-ascii-banner {
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none !important;
+    border: none !important;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+html[data-theme="dark"] .blog-ascii-banner picture img {
+  content: url("https://ascii.rest/banner/notes.dark.svg?color=072246&shadow=rounded&fill=block&size=l&bg=f6f8fa");
+}
+
+html[data-theme="light"] .blog-ascii-banner picture img {
+  content: url("https://ascii.rest/banner/notes.svg?color=072246&shadow=rounded&fill=block&size=l&bg=f6f8fa");
+}
+
+/* ==========================================================================
+   Publications
+   ========================================================================== */
+
+.publications ol.bibliography li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .title {
+    font-weight: 600;
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .author {
+    margin-top: 0.25rem;
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+
+    em {
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      color: #265d66;
+    }
+  }
+
+  .periodical {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+
+  .links a.btn {
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.24rem 0.65rem;
+    margin-right: 0.35rem;
+    margin-bottom: 0.35rem;
+    border: 1px solid #9AC2C9;
+    background-color: rgba(154, 194, 201, 0.2);
+    color: #225159;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      background-color: #9AC2C9;
+      color: #0b1a1c !important;
+      border-color: #9AC2C9;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li {
+  .author em {
+    color: #9AC2C9;
+  }
+
+  .links a.btn {
+    background-color: rgba(154, 194, 201, 0.14);
+    color: #9AC2C9;
+
+    &:hover {
+      background-color: #9AC2C9;
+      color: #0f1518 !important;
+    }
+  }
+}
+
+/* Venue badges: crisp white text */
+.publications .badge,
+.abbr,
+.abbr abbr,
+.abbr a,
+abbr.badge,
+abbr.badge a {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   Project Cards
+   ========================================================================== */
+
 .projects {
   .card {
+    background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
     border-radius: 8px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -148,12 +335,64 @@ html[data-theme="dark"] {
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
     }
   }
+
+  a {
+    text-decoration: none !important;
+
+    &:hover .card-title {
+      color: var(--global-theme-color) !important;
+    }
+  }
 }
 
-/* Clean badges */
-.badge {
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 0.28em 0.55em;
-  border-radius: 4px;
+/* ==========================================================================
+   CV: Date Badges Alignment & Contrast
+   ========================================================================== */
+
+.cv {
+  ul.list-group {
+    list-style: none !important;
+    padding-left: 0 !important;
+
+    li.list-group-item {
+      list-style: none !important;
+
+      &::marker {
+        display: none !important;
+      }
+    }
+  }
+
+  .date-column {
+    transform: none !important;
+    text-align: left !important;
+    min-width: 170px;
+
+    table.table-cv {
+      margin: 0 !important;
+
+      td {
+        vertical-align: top !important;
+      }
+    }
+  }
+
+  /* Crisp dark teal badge in light mode */
+  .card .list-group-item .badge {
+    background-color: #265d66 !important;
+    color: #ffffff !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    padding: 0.35rem 0.6rem !important;
+    border-radius: 4px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Soft glowing teal pill in dark mode */
+html[data-theme="dark"] .cv .card .list-group-item .badge {
+  background-color: rgba(154, 194, 201, 0.16) !important;
+  color: #9AC2C9 !important;
+  border: 1px solid rgba(154, 194, 201, 0.4) !important;
 }
