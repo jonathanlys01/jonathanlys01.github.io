@@ -10,13 +10,15 @@ tags:
   - tech
   - deep-learning
   - optimization
-excerpt: "ML and hardware improvements on optimizers"
+layout: post
+title: "Optimizing Optimizers"
+description: "ML and hardware improvements on optimizers"
+toc:
+  beginning: true
 ---
 
-{% include toc %}
-
 **TL;DR** Technical notes on improving optimizers via machine learning and hardware advancements. Assumes familiarity with basic optimization concepts.
-{: .notice--info}
+
 
 ## Algorithmic Improvements
 

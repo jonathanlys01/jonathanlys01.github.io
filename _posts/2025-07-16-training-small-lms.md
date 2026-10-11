@@ -1,16 +1,15 @@
 ---
+layout: post
 title: "Pre-training Small LMs"
-tags:
-  - tech
-  - llm
-excerpt: "Pre-train small LMs with a limited compute budget."
+date: 2025-07-16 12:00:00
+description: "Pre-train small LMs with a limited compute budget."
+tags: [tech, llm]
+categories: research
+toc:
+  beginning: true
 ---
 
-{% include toc %}
-
-
 **TLDR**: A primer on how to pre-train small language models in the 1B-2B range, with a limited compute budget.
-{: .notice--info}
 
 
 ## Scaling laws

@@ -1,9 +1,10 @@
 ---
-title: 'Site Launch - Accepted paper at EUSIPCO 2024'
-tags:
-  - announcements
-  - publications
-excerpt: "Announcement: first paper accepted as an oral at EUSIPCO"
+layout: post
+title: "Accepted paper at EUSIPCO 2024"
+date: 2024-05-22 12:00:00
+description: "First paper accepted as an oral at EUSIPCO 2024"
+tags: [announcements, publications]
+categories: research
 ---
 
 This is the first post of this website, and it's an announcement:

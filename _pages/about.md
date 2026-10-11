@@ -1,31 +1,35 @@
 ---
+layout: about
+title: about
 permalink: /
-title: "Jonathan Lys"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: <a href="https://www.imt-atlantique.fr/en" target="_blank" rel="noopener noreferrer">IMT Atlantique</a> · <a href="http://recherche.imt-atlantique.fr/brain/" target="_blank" rel="noopener noreferrer">BRAIN Team</a> · Brest, France
+
+profile:
+  align: right
+  image: profile.jpeg
+  image_circular: true
+  more_info: >
+    <p>IMT Atlantique</p>
+    <p>BRAIN Team</p>
+    <p>Brest, France</p>
+
+selected_papers: true
+social: true
+
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 5
+
+latest_posts:
+  enabled: false
 ---
 
-## About Me
+I am a third-year PhD candidate in Computer Science at [IMT Atlantique](https://www.imt-atlantique.fr/en) within the [BRoader Artificial Intelligence (BRAIN)](http://recherche.imt-atlantique.fr/brain/) team.
 
-I am a third-year PhD student at [IMT Atlantique](https://www.imt-atlantique.fr/en) in the [BRoader Artificial Intelligence (BRAIN)](http://recherche.imt-atlantique.fr/brain/) team. 
-My research interests include deep learning, computer vision, and natural language processing, with a focus on diffusion based generative models.
+My research focuses on **Deep Learning**, **Computer Vision**, and **Foundation Models**, with particular emphasis on:
+- **Diffusion-based Generative Models**: Discrete diffusion decoding, parallel sampling, and diversity mechanisms.
+- **EEG Foundation Models**: Large-scale multi-subject pretraining and spatial-temporal representations (e.g., [REVE](https://brain-bzh.github.io/reve/) at NeurIPS 2025).
+- **Parameter-Efficient Adaptation (PEFT)**: Tensor-based and subject-adaptive LoRA architectures (e.g., [TensLoRA](https://arxiv.org/abs/2509.19391), Stacked LoRA).
 
-My current projects can be found on my [GitHub profile](https://github.com/jonathanlys01).
-
-
-## Publications (via HAL)
-
-
-<div style="overflow:auto; border-radius:8px; border:1px solid rgb(228, 228, 228)">
-  <iframe
-    class="haltools-iframe"
-    data-haltools-css-light="{{ '/assets/css/haltools-iframe-light.css' | absolute_url }}"
-    data-haltools-css-dark="{{ '/assets/css/haltools-iframe-dark.css' | absolute_url }}"
-    src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=Jonathan+Lys&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&CB_rubriqueDiv=oui&Fen=Aff&css=https://jonathanlys01.github.io/assets/css/haltools-iframe-light.css"
-    width="100%"
-    height="200vh"
-    frameborder="0">
-  </iframe>
-</div>
+Previously, I was a Visiting Scientist at **Sony Europe** (Stuttgart) studying conditional generation for text diffusion and looped AR LLMs, and a Research Intern at **Criteo AI Lab** (Paris) optimizing large-scale diffusion models up to 6B parameters.
