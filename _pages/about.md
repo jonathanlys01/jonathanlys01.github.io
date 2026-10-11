@@ -32,3 +32,5 @@ My research focuses on **Masked Models** including:
 - Other topics covering **parameter-efficient fine-tuning**, **computer vision** and **few-shot learning**.
 
 I was previously a Visiting Scientist at **Sony Europe** (Stuttgart, Germany) and a Research Intern at **Criteo AI Lab** (Paris, France).
+
+---
