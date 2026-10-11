@@ -132,6 +132,36 @@
       "summary": "Development of a Web application for network management, automation of database migrations"
     }
   ],
+  "volunteer": [
+    {
+      "organization": "IMTA Research Committee",
+      "position": "PhD student representative"
+    },
+    {
+      "organization": "IMTA PhD Student Association",
+      "position": "Secretary"
+    },
+    {
+      "organization": "IMTA Photography Association",
+      "position": "President (until 2023)"
+    },
+    {
+      "organization": "IMTA Short Film Association",
+      "position": "President (until 2023)"
+    },
+    {
+      "organization": "IMTA Sound & Light Association",
+      "position": "Officer (until 2023)"
+    },
+    {
+      "organization": "IMTA Arts Association",
+      "position": "Member (until 2023)"
+    },
+    {
+      "organization": "IMTA Chess Association",
+      "position": "Member"
+    }
+  ],
   "skills": [
     {
       "name": "Programming Languages",
@@ -158,8 +188,7 @@
       "keywords": [
         "PyTorch (distributed)",
         "TensorFlow/Keras",
-        "CNNs and Transformers training",
-        "triton"
+        "CNNs and Transformers training"
       ]
     },
     {
@@ -222,7 +251,10 @@
       ]
     },
     {
-      "name": "Photography"
+      "name": "Photography",
+      "keywords": [
+        "Fujifilm X-S10 + XF 35mm f/1.4 R"
+      ]
     }
   ],
   "associations": [

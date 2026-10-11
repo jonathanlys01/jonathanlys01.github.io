@@ -26,37 +26,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 /* ==========================================================================
-   Theme Variables (#9AC2C9 Accent + Off-white Light Mode)
+   Theme Variables (Teal Light/Dark Palette)
    ========================================================================== */
 
 :root {
-  --global-theme-color: #9AC2C9;
-  --global-hover-color: #7daeb5;
-  --global-bg-color: #f3f6f7;
+  --global-theme-color: #22616b;
+  --global-hover-color: #184850;
+  --global-hover-text-color: #ffffff;
+  --global-bg-color: #f4f7f7;
   --global-card-bg-color: #ffffff;
-  --global-text-color: #2b3638;
-  --global-text-color-light: #5c6f72;
-  --global-divider-color: #d9e2e4;
-  --global-code-bg-color: #e6edef;
+  --global-text-color: #26383c;
+  --global-text-color-light: #52686d;
+  --global-divider-color: #d7e2e4;
+  --global-code-bg-color: #e7f0f1;
   --global-highlight-color: #ffcb47;
-  --global-footer-bg-color: #1a2427;
-  --global-footer-text-color: #97abb0;
-  --global-footer-link-color: #9AC2C9;
+  --global-footer-bg-color: #17262a;
+  --global-footer-text-color: #a7bfc2;
+  --global-footer-link-color: #9eced5;
 }
 
 html[data-theme="dark"] {
-  --global-theme-color: #9AC2C9;
-  --global-hover-color: #b9d8c2;
-  --global-bg-color: #0f1518;
-  --global-card-bg-color: #162024;
-  --global-text-color: #f0f4f5;
-  --global-text-color-light: #8fa2a6;
-  --global-divider-color: #223137;
-  --global-code-bg-color: #1a252a;
+  --global-theme-color: #9eced5;
+  --global-hover-color: #c4e3e8;
+  --global-hover-text-color: #10191d;
+  --global-bg-color: #10191d;
+  --global-card-bg-color: #1a272c;
+  --global-text-color: #edf4f5;
+  --global-text-color-light: #a3b5b9;
+  --global-divider-color: #2a3d43;
+  --global-code-bg-color: #1e2d33;
   --global-highlight-color: #ffcb47;
-  --global-footer-bg-color: #090e10;
-  --global-footer-text-color: #8fa2a6;
-  --global-footer-link-color: #9AC2C9;
+  --global-footer-bg-color: #0a1215;
+  --global-footer-text-color: #a3b5b9;
+  --global-footer-link-color: #9eced5;
 }
 
 /* ==========================================================================
@@ -151,21 +153,21 @@ code, kbd, samp, pre {
   font-family: "JetBrains Mono", monospace !important;
 }
 
-/* Notes page and posts exclusively use JetBrains Mono */
+/* Notes page and posts exclusively use JetBrains Mono (excluding icons) */
 .blog-page,
-.blog-page *,
+.blog-page *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]),
 .post-title,
-.post-title *,
+.post-title *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]),
 .post-meta,
-.post-meta *,
+.post-meta *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]),
 .post-tags,
-.post-tags *,
+.post-tags *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]),
 .post-content,
-.post-content *,
+.post-content *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]),
 article.post-content,
-article.post-content *,
+article.post-content *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]),
 .post:has(article.post-content),
-.post:has(article.post-content) * {
+.post:has(article.post-content) *:not(i):not([class*="fa-"]):not([class*="ai-"]):not([class*="fa"]):not([class*="ai"]) {
   font-family: "JetBrains Mono", monospace !important;
 }
 
@@ -174,20 +176,17 @@ article.post-content *,
    ========================================================================== */
 
 a {
-  color: #265d66;
+  color: var(--global-theme-color);
   transition: color 0.15s ease;
 
   &:hover {
-    color: #163e44;
+    color: var(--global-hover-color);
   }
 }
 
-html[data-theme="dark"] a {
-  color: #9AC2C9;
-
-  &:hover {
-    color: #b9d8c2;
-  }
+.af-page-item.active .af-page-link,
+.pagination .page-item.active .page-link {
+  color: var(--global-hover-text-color);
 }
 
 .navbar {
@@ -195,12 +194,8 @@ html[data-theme="dark"] a {
 
   .nav-item.active .nav-link {
     font-weight: 600;
-    color: #265d66 !important;
+    color: var(--global-theme-color) !important;
   }
-}
-
-html[data-theme="dark"] .navbar .nav-item.active .nav-link {
-  color: #9AC2C9 !important;
 }
 
 /* ==========================================================================
@@ -235,6 +230,10 @@ html[data-theme="light"] .blog-ascii-banner picture img {
    Publications
    ========================================================================== */
 
+.publications h2.bibliography {
+  color: var(--global-text-color-light);
+}
+
 .publications ol.bibliography li {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
@@ -261,7 +260,7 @@ html[data-theme="light"] .blog-ascii-banner picture img {
       font-style: normal;
       text-decoration: underline;
       text-underline-offset: 3px;
-      color: #265d66;
+      color: var(--global-theme-color);
     }
   }
 
@@ -277,32 +276,16 @@ html[data-theme="light"] .blog-ascii-banner picture img {
     padding: 0.24rem 0.65rem;
     margin-right: 0.35rem;
     margin-bottom: 0.35rem;
-    border: 1px solid #9AC2C9;
-    background-color: rgba(154, 194, 201, 0.2);
-    color: #225159;
+    border: 1px solid var(--global-theme-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    color: var(--global-theme-color);
     transition: all 0.15s ease-in-out;
 
     &:hover {
-      background-color: #9AC2C9;
-      color: #0b1a1c !important;
-      border-color: #9AC2C9;
+      background-color: var(--global-theme-color);
+      color: var(--global-bg-color) !important;
+      border-color: var(--global-theme-color);
       transform: translateY(-1px);
-    }
-  }
-}
-
-html[data-theme="dark"] .publications ol.bibliography li {
-  .author em {
-    color: #9AC2C9;
-  }
-
-  .links a.btn {
-    background-color: rgba(154, 194, 201, 0.14);
-    color: #9AC2C9;
-
-    &:hover {
-      background-color: #9AC2C9;
-      color: #0f1518 !important;
     }
   }
 }
@@ -379,7 +362,7 @@ abbr.badge a {
 
   /* Crisp dark teal badge in light mode */
   .card .list-group-item .badge {
-    background-color: #265d66 !important;
+    background-color: var(--global-theme-color) !important;
     color: #ffffff !important;
     font-size: 0.72rem !important;
     font-weight: 600 !important;
@@ -392,7 +375,70 @@ abbr.badge a {
 
 /* Soft glowing teal pill in dark mode */
 html[data-theme="dark"] .cv .card .list-group-item .badge {
-  background-color: rgba(154, 194, 201, 0.16) !important;
-  color: #9AC2C9 !important;
-  border: 1px solid rgba(154, 194, 201, 0.4) !important;
+  background-color: color-mix(in srgb, var(--global-theme-color) 16%, transparent) !important;
+  color: var(--global-theme-color) !important;
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 40%, transparent) !important;
+}
+
+/* ==========================================================================
+   About Page Social Icons & Contact Note
+   ========================================================================== */
+
+.social {
+  .contact-icons {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0.25rem;
+
+      i {
+        font-size: 2rem;
+      }
+
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+
+      svg {
+        width: 1.75rem;
+        height: 2rem;
+
+        image {
+          width: 1.75rem;
+          height: 1.75rem;
+        }
+      }
+    }
+  }
+
+  .contact-note {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* ==========================================================================
+About Page Profile Photo
+========================================================================== */
+
+.profile {
+  max-width: 200px;
+
+  @media (min-width: 576px) {
+    width: 22% !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
