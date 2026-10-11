@@ -3,7 +3,7 @@
     "name": "Jonathan Lys",
     "email": "jonathan.lys@imt-atlantique.org",
     "website": "https://jonathanlys01.github.io",
-    "summary": "Second year PhD student at IMT Atlantique. Previously research intern in the Criteo AI Lab. Computer Vision, Natural Language Processing and Deep Learning enthusiast. I like to optimize the training and the generation of large language models and diffusion models.",
+    "summary": "Third year PhD student at IMT Atlantique. Previously research intern in the Criteo AI Lab. Computer Vision, Natural Language Processing and Deep Learning enthusiast. I like to optimize the training and the generation of large language models and diffusion models.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -28,16 +28,30 @@
         "url": "https://scholar.google.com/citations?user=heUq7WEAAAAJ"
       },
       {
-        "url": "https://imt-atlantique.hal.science/search/index/?q=*&authIdPerson_i=1578764",
+        "url": "https://cv.hal.science/jonathan-lys",
         "network": "ai ai-hal ai-fw",
-        "name": "HAL IMT Atlantique"
+        "name": "HAL"
+      },
+      {
+        "url": "https://orcid.org/0009-0006-7908-843X",
+        "network": "ai ai-orcid ai-fw",
+        "name": "ORCID"
+      },
+      {
+        "url": "https://www.alphaxiv.org/@jonathan-lys",
+        "network": "ai ai-arxiv ai-fw",
+        "name": "alphaXiv"
+      },
+      {
+        "url": "https://www.semanticscholar.org/author/2381834242",
+        "network": "ai ai-semantic-scholar ai-fw",
+        "name": "Semantic Scholar"
       },
       {
         "network": "fa-regular fa-face-smile",
         "name": "Hugging Face",
         "url": "https://huggingface.co/jonathan-lys"
       }
-
     ]
   },
   "education": [

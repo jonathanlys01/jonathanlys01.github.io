@@ -23,6 +23,7 @@ places = [
     "Oxford University",  # Summer School
     "INRIA Grenoble",  # Summer School
     "San Diego Convention Center, San Diego, USA",  # NeurIPS 2025
+    "BMCC, Bruges, Belgium",  # EUSIPCO 2026
 ]
 # END EDIT
 

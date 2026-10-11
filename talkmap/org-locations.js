@@ -48,5 +48,10 @@ var addressPoints = [
     "San Diego Convention Center, San Diego, USA",
     32.7063756,
     -117.1619249
+  ],
+  [
+    "BMCC, Bruges, Belgium",
+    51.2042207,
+    3.214981
   ]
 ];

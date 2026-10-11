@@ -35,13 +35,14 @@ author:
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : https://scholar.google.fr/citations?user=heUq7WEAAAAJ&hl=en
+  hal              : "https://cv.hal.science/jonathan-lys"
+  # orcid            : "https://orcid.org/0009-0006-7908-843X"
+  alphaxiv         : "https://www.alphaxiv.org/@jonathan-lys"
+  # semantic         : "https://www.semanticscholar.org/author/2381834242"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # "http://orcid.org/yourorcidurl"
-  semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   ssrn             : # URL
-  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
