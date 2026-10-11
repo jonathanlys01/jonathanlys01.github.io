@@ -5,8 +5,8 @@ permalink: /projects/
 description: Research projects, tools, and interactive explorers.
 nav: true
 nav_order: 2
-display_categories: [research]
 horizontal: false
+
 ---
 
 <!-- pages/projects.md -->

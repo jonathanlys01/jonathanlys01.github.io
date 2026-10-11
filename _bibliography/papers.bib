@@ -24,7 +24,6 @@
   author            = {Marmoret, Axel and Bensaid, Reda and Lys, Jonathan and Gripon, Vincent and Leduc-Primeau, François},
   booktitle         = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year              = {2026},
-  selected          = {true},
   preview           = {tenslora.png},
   arxiv             = {2509.19391},
   doi               = {10.1109/icassp55912.2026.11460572},
@@ -38,7 +37,6 @@
   author            = {Sarhane, Aymen and Lbakali, Fouad and Souissi, Mouad and Lys, Jonathan and Lioi, Giulia},
   booktitle         = {IEEE World Congress on Computational Intelligence (WCCI)},
   year              = {2026},
-  selected          = {true},
   arxiv             = {2607.03094},
   abstract          = {Electroencephalography (EEG) decoding for brain-computer interfaces (BCIs) faces a major challenge: substantial inter-subject variability limits effective cross-subject generalization. Consequently, practical systems still rely largely on subject-specific models trained from scratch and requiring individual recalibration. EEG foundation models have recently emerged as a promising alternative; however, even large pretrained models cannot simply be used as fixed feature extractors and still require additional adaptation before they can be reliably applied to downstream tasks. In this work, we address this challenge through targeted adaptation strategies. Building on recent EEG foundation models such as REVE, LaBraM, and LUNA, we examine the impact of different low-rank adaptation strategies on motor imagery classification. We propose a framework that structurally decouples subject-invariant knowledge from subject-specific neural signatures: the low-rank update at each adapted layer is split into a Global adapter, trained jointly across all subjects, and Subject-Specific adapters, each absorbing individual variability. To assess the contribution of each path, we compare three adaptation strategies: (i) subject-specific LoRA (ii) global LoRA and (iii) stacked LoRA, combining both Global and Subject Specific adapters. Experiments on BCI Competition IV-2a, PhysioNet Motor Imagery, and the clinical Zuo2025 benchmark show that Stacked LoRA effectively mitigates inter-subject variability, achieving the best accuracy in the large majority of backbone and dataset combinations.}
 }
@@ -50,6 +48,7 @@
   author            = {Lys, Jonathan and Gripon, Vincent and Pasdeloup, Bastien and Marmoret, Axel and Mauch, Lukas and Cardinaux, Fabien and Hacene, Ghouthi Boukli},
   booktitle         = {European Signal Processing Conference (EUSIPCO)},
   year              = {2026},
+  selected          = {true},
   arxiv             = {2602.14759},
   code              = {https://github.com/jonathanlys01/looped-transformer},
   abstract          = {Deep Learning architectures, and in particular Transformers, are conventionally viewed as a composition of layers. These layers are actually often obtained as the sum of two contributions: a residual path that copies the input and the output of a Transformer block. As a consequence, the inner representations (i.e. the input of these blocks) can be interpreted as iterative refinement of a propagated latent representation. Under this lens, many works suggest that the inner space is shared across layers, meaning that tokens can be decoded at early stages. Mechanistic interpretability even goes further by conjecturing that some layers act as refinement layers. Following this path, we propose inference-time inner looping, which prolongs refinement in pretrained off-the-shelf language models by repeatedly re-applying a selected block range. Across multiple benchmarks, inner looping yields modest but consistent accuracy improvements. Analyses of the resulting latent trajectories suggest more stable state evolution and continued semantic refinement. Overall, our results suggest that additional refinement can be obtained through simple test-time looping, extending computation in frozen pretrained models.}
@@ -62,6 +61,7 @@
   author            = {Lys, Jonathan and Gripon, Vincent and Pasdeloup, Bastien and Marmoret, Axel and Mauch, Lukas and Cardinaux, Fabien and Hacene, Ghouthi Boukli},
   booktitle         = {European Signal Processing Conference (EUSIPCO)},
   year              = {2026},
+  selected          = {true},
   arxiv             = {2602.14760},
   code              = {https://github.com/jonathanlys01/causal-shift},
   abstract          = {Large Language Models (LLMs) are trained with next-token prediction, implemented in autoregressive Transformers via causal masking for parallelism. This creates a subtle misalignment: residual connections tie activations to the current token, while supervision targets the next token, potentially propagating mismatched information if the current token is not the most informative for prediction. In this work, we empirically localize this input-output alignment shift in pretrained LLMs, using decoding trajectories over tied embedding spaces and similarity-based metrics. Our experiments reveal that the hidden token representations switch from input alignment to output alignment deep within the network. Motivated by this observation, we propose a lightweight residual-path mitigation based on residual attenuation, implemented either as a fixed-layer intervention or as a learnable gating mechanism. Experiments on multiple benchmarks show that these strategies alleviate the representation misalignment and yield improvements, providing an efficient and general architectural enhancement for autoregressive Transformers.}
@@ -74,6 +74,7 @@
   author            = {Lys, Jonathan and Gripon, Vincent and Pasdeloup, Bastien and Marmoret, Axel and Mauch, Lukas and Cardinaux, Fabien and Hacene, Ghouthi Boukli},
   journal           = {arXiv preprint arXiv:2603.19146},
   year              = {2026},
+  selected          = {true},
   arxiv             = {2603.19146},
   code              = {https://github.com/jonathanlys01/d5p4},
   abstract          = {Discrete diffusion models are promising alternatives to autoregressive approaches for text generation, yet their decoding methods remain under-studied. Standard autoregressive search procedures, such as beam search, do not directly apply to iterative denoising, where hypotheses are complete intermediate sequences rather than left-to-right prefixes. Furthermore, existing diffusion decoding procedures only provide limited control over the diversity and coverage of retained hypotheses. In this work, we introduce D5P4, a beam-style decoding method tailored to discrete diffusion models, which casts intermediate beam selection as MAP inference under a partitioned Determinantal Point Process. This yields a model-internal batch objective that balances quality and diversity without external verifiers. Experiments on open-ended generation, question answering, and mathematical reasoning show that D5P4 improves diversity and pass@k coverage while matching or surpassing baseline quality and fidelity.}

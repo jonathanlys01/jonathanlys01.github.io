@@ -1,0 +1,159 @@
+---
+# Custom palette and theme override
+---
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ==========================================================================
+   Refined Modern Academic Theme & Palette
+   ========================================================================== */
+
+:root {
+  /* Core brand & accent: authoritative Cobalt Blue */
+  --global-theme-color: #2563eb;
+  --global-hover-color: #1d4ed8;
+
+  /* Surfaces & text */
+  --global-bg-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --global-text-color: #0f172a;       /* Slate 900 */
+  --global-text-color-light: #475569; /* Slate 600 */
+  --global-divider-color: #e2e8f0;    /* Slate 200 */
+
+  /* Code & highlights */
+  --global-code-bg-color: #f1f5f9;
+  --global-highlight-color: #2563eb;
+
+  /* Footer */
+  --global-footer-bg-color: #0f172a;
+  --global-footer-text-color: #94a3b8;
+  --global-footer-link-color: #f8fafc;
+}
+
+html[data-theme="dark"] {
+  /* Dark mode accent: crisp sky blue */
+  --global-theme-color: #38bdf8;
+  --global-hover-color: #7dd3fc;
+
+  /* Surfaces & text */
+  --global-bg-color: #0b0f19;         /* Midnight deep slate */
+  --global-card-bg-color: #111827;    /* Slate 900 card surface */
+  --global-text-color: #f8fafc;       /* Crisp off-white */
+  --global-text-color-light: #94a3b8; /* Slate 400 */
+  --global-divider-color: #1e293b;    /* Dark divider */
+
+  /* Code & highlights */
+  --global-code-bg-color: #1e293b;
+  --global-highlight-color: #38bdf8;
+
+  /* Footer */
+  --global-footer-bg-color: #030712;
+  --global-footer-text-color: #94a3b8;
+  --global-footer-link-color: #f8fafc;
+}
+
+/* Publication styling polish */
+.publications {
+  ol.bibliography {
+    li {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .title {
+        font-weight: 600;
+        color: var(--global-text-color);
+        font-size: 1.05rem;
+        line-height: 1.4;
+      }
+
+      .author {
+        margin-top: 0.2rem;
+        color: var(--global-text-color-light);
+        font-size: 0.95rem;
+
+        em {
+          font-weight: 700;
+          color: var(--global-theme-color);
+          font-style: normal;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+
+      .periodical {
+        font-size: 0.9rem;
+        color: var(--global-text-color-light);
+      }
+
+      .links {
+        margin-top: 0.5rem;
+
+        a.btn {
+          border-radius: 6px;
+          font-size: 0.78rem;
+          font-weight: 500;
+          padding: 0.22rem 0.6rem;
+          margin-right: 0.35rem;
+          margin-bottom: 0.35rem;
+          border: 1px solid var(--global-divider-color);
+          background-color: transparent;
+          color: var(--global-theme-color);
+          transition: all 0.15s ease-in-out;
+
+          &:hover {
+            background-color: var(--global-theme-color);
+            color: var(--global-bg-color) !important;
+            border-color: var(--global-theme-color);
+            transform: translateY(-1px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Project card subtle hover lift */
+.projects {
+  .card {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+/* Clean badges */
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.28em 0.55em;
+  border-radius: 4px;
+}

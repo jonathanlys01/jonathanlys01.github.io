@@ -1,27 +1,2 @@
-"courty":
-  - firstname: ["Nicolas", "N."]
-    url: "https://people.irisa.fr/Nicolas.Courty/"
-
-"drumetz":
-  - firstname: ["Lucas", "L."]
-    url: "https://lucasdrumetz.github.io/"
-
-"gripon":
-  - firstname: ["Vincent", "V."]
-    url: "https://perso.telecom-bretagne.eu/vincentgripon/"
-
-"lassance":
-  - firstname: ["Carlos", "C.", "Carlos Eduardo"]
-    url: "https://lassance.me/"
-
-"duffner":
-  - firstname: ["Stefan", "S."]
-    url: "https://perso.liris.cnrs.fr/stefan.duffner/"
-
-"chen":
-  - firstname: ["Mickaël", "M.", "Mickael"]
-    url: "https://mickaelchen.github.io/"
-
-"vandergheynst":
-  - firstname: ["Pierre", "P."]
-    url: "https://people.epfl.ch/pierre.vandergheynst"
+# Coauthors links (empty to prevent partial routing until all coauthors have URLs)
+{}
