@@ -1,7 +1,7 @@
 ---
 layout: page
 title: REVE Embedding Atlas
-description: Interactive browser-based explorer for the REVE pretraining dataset with 1M+ projected EEG/MEG windows using DuckDB-WASM
+description: Explore a million EEG and MEG windows, directly in your browser.
 img: assets/img/portfolio/reve-atlas.png
 importance: 1
 category: research
@@ -23,13 +23,13 @@ The **REVE Embedding Atlas** is an interactive, serverless web application that 
 
 ### Highlights
 
-* **Interactive Embedding Exploration**: Visualizes projected 2D embeddings of over 1,000,000 EEG/MEG windows using Apple Embedding Atlas, color-coded across diverse datasets (TUH, ICARE, OpenNeuro, etc.).
-* **Completely Serverless (DuckDB-WASM)**: Queries public Parquet tables hosted on Hugging Face directly inside the browser using DuckDB-WASM and HTTP byte-range requests — zero backend server required.
-* **Subset & Diversity Selection**: Explores Determinantal Point Processes (DPP) and ranking selections across candidate pools.
-* **Live Cross-Filtering**: Real-time SQL predicate filtering, reconstruction loss histograms, and dataset breakdowns.
+- **Interactive Embedding Exploration**: Visualizes projected 2D embeddings of over 1,000,000 EEG/MEG windows using Apple Embedding Atlas, color-coded across diverse datasets (TUH, ICARE, OpenNeuro, etc.).
+- **Completely Serverless (DuckDB-WASM)**: Queries public Parquet tables hosted on Hugging Face directly inside the browser using DuckDB-WASM and HTTP byte-range requests — zero backend server required.
+- **Subset & Diversity Selection**: Explores Determinantal Point Processes (DPP) and ranking selections across candidate pools.
+- **Live Cross-Filtering**: Real-time SQL predicate filtering, reconstruction loss histograms, and dataset breakdowns.
 
 ### Links
 
-* **Live Explorer**: [jonathanlys01.github.io/reve-atlas](https://jonathanlys01.github.io/reve-atlas/)
-* **Code Repository**: [github.com/jonathanlys01/reve-atlas](https://github.com/jonathanlys01/reve-atlas)
-* **Dataset on Hugging Face**: [huggingface.co/datasets/jonathan-lys/reve-atlas](https://huggingface.co/datasets/jonathan-lys/reve-atlas)
+- **Live Explorer**: [jonathanlys01.github.io/reve-atlas](https://jonathanlys01.github.io/reve-atlas/)
+- **Code Repository**: [github.com/jonathanlys01/reve-atlas](https://github.com/jonathanlys01/reve-atlas)
+- **Dataset on Hugging Face**: [huggingface.co/datasets/jonathan-lys/reve-atlas](https://huggingface.co/datasets/jonathan-lys/reve-atlas)

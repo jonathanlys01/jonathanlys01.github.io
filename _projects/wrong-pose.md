@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Wrong Pose
-description: Deep learning framework for 3D human pose quality assessment and ergonomics scoring from video streams
+description: "From video to 3D pose: assessing movement and ergonomics."
 img: assets/img/portfolio/wp-demo.gif
 importance: 4
 category: computer vision
 ---
 
-*Collaborative project developed for the Deep Learning & CNNs course at the University of Technology Sydney (UTS). Code and documentation available on [GitHub](https://github.com/joanvelja/WrongPose-42028).*
+_Collaborative project developed for the Deep Learning & CNNs course at the University of Technology Sydney (UTS). Code and documentation available on [GitHub](https://github.com/joanvelja/WrongPose-42028)._
 
 Workplace musculoskeletal disorders (MSDs) and repetitive strain injuries are strongly correlated with prolonged poor posture. **Wrong Pose** is an automated computer vision service that processes continuous video streams to detect body posture, reconstruct 3D joint configurations, and score ergonomic correctness in real time.
 
@@ -37,4 +37,4 @@ Workplace musculoskeletal disorders (MSDs) and repetitive strain injuries are st
 
 ### Links
 
-* **Source Code**: [github.com/joanvelja/WrongPose-42028](https://github.com/joanvelja/WrongPose-42028)
+- **Source Code**: [github.com/joanvelja/WrongPose-42028](https://github.com/joanvelja/WrongPose-42028)

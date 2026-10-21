@@ -3,7 +3,7 @@ layout: default
 permalink: /notes/
 title: notes
 nav: true
-nav_order: 4
+nav_order: 5
 pagination:
   enabled: false
   collection: posts
@@ -24,15 +24,8 @@ pagination:
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar text-center">
-    <div class="blog-ascii-banner">
-      <a href="https://ascii.rest/banner/">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/notes.dark.svg?color=072246&shadow=rounded&fill=block&size=l&bg=f6f8fa">
-          <img alt="notes" src="https://ascii.rest/banner/notes.svg?color=072246&shadow=rounded&fill=block&size=l&bg=f6f8fa">
-        </picture>
-      </a>
-    </div>
-    <h2>{{ site.blog_description }}</h2>
+    <h1 class="blog-ascii-banner"><span class="sr-only">Notes</span><span class="notes-lettering" aria-hidden="true">NOTES<span class="notes-cursor">_</span></span></h1>
+    <p class="notes-description">{{ site.blog_description }}</p>
   </div>
   {% endif %}
 
@@ -122,14 +115,10 @@ pagination:
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
+        <a href="{{ year | prepend: '/blog/' | relative_url }}"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time></a>
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
-      </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
       </p>
 
 {% if post.thumbnail %}
