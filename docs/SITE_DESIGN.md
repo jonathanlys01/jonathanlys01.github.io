@@ -9,7 +9,7 @@ aquarium also becomes a still frame. Content stays readable without JavaScript.
 The homepage's selected work is curated in `_pages/about.md`. Project cards read
 front matter from `_projects/`; the complete bibliography remains the source for
 Publications and the web CV. Notes use a locally rendered heading and JetBrains Mono. Pages other than the CV and Publications
-use a vendored ASCII aquarium (see `assets/js/vendor/ascii-sharks/README.md`).
+use a vendored ASCII aquarium (see `assets/js/ascii-sharks/README.md`).
 
 ## Downloadable CV
 

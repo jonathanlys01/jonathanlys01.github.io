@@ -1,4 +1,4 @@
-import { AsciiRenderer, World } from "./vendor/ascii-sharks/ocean.min.js";
+import { AsciiRenderer, World } from "./ascii-sharks/ocean.min.js";
 
 // Decorative only: no pointer tracking or click effects across the site.
 const canvas = document.getElementById("site-ocean");

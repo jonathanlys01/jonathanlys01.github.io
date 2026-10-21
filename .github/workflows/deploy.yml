@@ -71,6 +71,8 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+          test -s _site/assets/js/site-ocean.js
+          test -s _site/assets/js/ascii-sharks/ocean.min.js
 
       - name: Purge unused CSS 🧹
         run: |
