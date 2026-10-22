@@ -39,7 +39,7 @@ permalink: /
       </div>
     </div>
     <div class="research-pair">
-      <a class="research-note" href="https://arxiv.org/abs/2603.19146"><div class="research-glyph" aria-hidden="true">░░ ▒▒ ░░<br>▒▒ ▓▓ ▒▒<br>▓▓ ██ ▓▓</div><div><p class="eyebrow">Discrete diffusion / 2026</p><h3><span class="sweep-underline">D5P4</span></h3><p>Balancing quality and diversity in parallel discrete diffusion decoding.</p></div></a>
+      <a class="research-note" href="https://arxiv.org/abs/2603.19146"><div class="research-glyph diffusion-glyph" aria-hidden="true">░░ ▒▒ ░░<br>▒▒ ▓▓ ▒▒<br>▓▓ ██ ▓▓</div><div><p class="eyebrow">Discrete diffusion / 2026</p><h3><span class="sweep-underline">D5P4</span></h3><p>Balancing quality and diversity in parallel discrete diffusion decoding.</p></div></a>
       <a class="research-note" href="https://arxiv.org/abs/2602.14759"><svg class="research-glyph loop-glyph" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M48 18A22 22 0 1 1 32 10"/><path d="M25 4L32 10L25 16"/></g></svg><div><p class="eyebrow">Inference / 2026</p><h3><span class="sweep-underline">Inner Loop Inference</span></h3><p>Extending computation in frozen Transformers by revisiting their inner layers.</p></div></a>
     </div>
   </section>

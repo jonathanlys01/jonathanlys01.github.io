@@ -474,6 +474,11 @@ a:hover h3 span:not(.sweep-underline),
 .research-note:hover .research-glyph {
   transform: translateY(-4px);
 }
+.diffusion-glyph {
+  white-space: pre;
+  letter-spacing: 0;
+  font-size: 0.62rem;
+}
 /* Project index: consistent imagery, with room for titles. */
 .project-grid {
   display: grid;
@@ -988,16 +993,18 @@ html[data-theme="dark"] .site-ocean {
 }
 @media (max-width: 575px) {
   .home-intro {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 1.15rem;
+    grid-template-columns: minmax(0, 1fr) 76px;
+    gap: 0 1rem;
+  }
+  .home-intro-copy {
+    display: contents;
+  }
+  .home-intro-copy > * {
+    grid-column: 1 / -1;
   }
   .home-portrait {
-    align-self: flex-start;
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
+    grid-column: 2;
+    grid-row: 2;
     margin: 0;
   }
   .home-portrait img {
@@ -1005,9 +1012,10 @@ html[data-theme="dark"] .site-ocean {
     height: 90px;
   }
   .home-intro h1 {
+    grid-column: 1;
     margin-top: 0.6rem;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: clamp(2.25rem, 10vw, 3rem);
   }
   .home-history {
     margin: 0.75rem 0 1.1rem;
